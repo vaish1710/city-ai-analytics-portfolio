@@ -3,6 +3,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 import numpy as np, pandas as pd, pytest
 import world, flood
+W = world
 
 
 def grid(M, basins):
@@ -95,3 +96,27 @@ def test_recall_k_works_on_a_held_out_slice_in_any_row_order():
     assert a == pytest.approx(flood.recall_at_k(te, s, k=8))
     ps = world.per_storm(te, s, k=8)
     assert ps.hits.sum() / ps.total.sum() == pytest.approx(a[0])
+
+
+def test_drift_share_direction_and_timing():
+    """Same seed with and without drift: only the drifting share of segments changes, in both directions, only after drift_at."""
+    base = W.make_world(n_seg=200, n_storms=60, seed=11, drift_frac=0.0)
+    dr = W.make_world(n_seg=200, n_storms=60, seed=11, drift_frac=0.4, drift_at=0.5)
+    assert (base.storm.values == dr.storm.values).all() and (base.segment.values == dr.segment.values).all()
+    d = dr.p_true.values - base.p_true.values
+    after = dr.storm.values >= dr.storm.min() + int(0.5 * (dr.storm.max() - dr.storm.min() + 1))
+    assert np.abs(d[~after]).max() < 1e-12                      # nothing changes before the change point
+    late = dr[after].assign(d=d[after])
+    per_seg = late.groupby("segment").d.mean()
+    changed = per_seg.abs() > 1e-9
+    assert 0.3 < changed.mean() < 0.5                           # about 40% of segments drift
+    assert (per_seg[changed] > 0).any() and (per_seg[changed] < 0).any()   # some get worse, some better
+    assert (W.make_world(n_seg=200, n_storms=60, seed=11, drift_frac=0.0).p_true.values == base.p_true.values).all()
+
+
+def test_tidal_share_and_tide_effect():
+    d = W.make_world(n_seg=400, n_storms=30, seed=4)
+    share = d.drop_duplicates("segment").tidal.mean()
+    assert 0.05 < share < 0.6
+    hi = d[d.tide_fc > d.tide_fc.quantile(0.8)]
+    assert hi[hi.tidal == 1].p_true.mean() > hi[hi.tidal == 0].p_true.mean()   # tidal roads flood more at high tide
