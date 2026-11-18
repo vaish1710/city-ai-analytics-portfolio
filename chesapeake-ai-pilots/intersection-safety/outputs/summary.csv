@@ -1,5 +1,0 @@
-ranking,future_share_mean,future_share_min,future_share_max,true_top10_found
-empirical Bayes,0.283,0.219,0.34,0.709
-raw crash count,0.28,0.221,0.341,0.694
-model only (no history),0.222,0.171,0.268,0.431
-crashes per vehicle,0.193,0.144,0.244,0.344

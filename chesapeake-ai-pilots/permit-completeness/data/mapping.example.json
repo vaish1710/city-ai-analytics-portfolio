@@ -1,5 +1,0 @@
-{
-  "_note": "Replace the right-hand values with YOUR column names (placeholders). 'fields' are the application answers the checklist's conditions use. 'staff_missing' is optional.",
-  "permit_type": "PERMIT_TYPE", "files": "UPLOADED_FILES", "staff_missing": "STAFF_MISSING_DOCS",
-  "fields": {"height_ft": "HEIGHT_FT", "in_flood_zone": "IN_FLOOD_ZONE", "uses_contractor": "USES_CONTRACTOR"}
-}
