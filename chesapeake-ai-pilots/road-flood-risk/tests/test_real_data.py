@@ -62,3 +62,30 @@ def test_cli_end_to_end(tmp_path):
                         "--mapping", str(tmp_path / "m.json"), "--boot", "50", "--out", str(tmp_path / "o")], capture_output=True, text=True)
     assert r.returncode == 0, r.stderr
     assert "hotspot history" in r.stdout and "bootstrap" in r.stdout and (tmp_path / "o" / "per_storm_model.csv").exists()
+
+
+def _write(tmp, storms, segments, incidents):
+    pd.DataFrame(storms, columns=["SID", "T0", "PK", "TOT", "TIDE"]).to_csv(tmp / "s.csv", index=False)
+    pd.DataFrame(segments, columns=["SEG", "ELEV", "DRAIN", "TIDAL"]).to_csv(tmp / "g.csv", index=False)
+    pd.DataFrame(incidents, columns=["SID", "SEG"]).to_csv(tmp / "i.csv", index=False)
+    return tmp / "s.csv", tmp / "g.csv", tmp / "i.csv"
+
+
+def test_dropped_rows_are_reported_each_by_name(tmp_path):
+    storms = [["A", "2024-01-01", 1, 2, 3], ["B", "not a date", 1, 2, 3], ["C", "2024-01-09", 1, None, 3]]
+    segs = [["r1", 5, 100, "Y"], ["r2", None, 100, "N"]]
+    incs = [["A", "r1"], ["A", "r1"], ["ZZ", "r1"], ["A", "nope"]]
+    df, notes = load_real(*_write(tmp_path, storms, segs, incs), MAP)
+    text = " | ".join(notes)
+    assert "dropped 2 storms" in text and "dropped 1 segments" in text and "dropped 2 incident rows" in text
+    assert len(df) == 1 and df.incident.sum() == 1                      # one storm x one segment, duplicate incident counted once
+
+
+def test_small_data_warnings_appear_only_when_small(tmp_path):
+    small = load_real(*export(F.make_data(seed=5, n_storms=20), tmp_path), MAP)[1]
+    assert any("fewer than 40 storms" in n for n in small)
+    big_dir = tmp_path / "big"; big_dir.mkdir()
+    big = load_real(*export(F.make_data(seed=5, n_storms=120, n_seg=80), big_dir), MAP)
+    n_inc = int(big[0].incident.sum())
+    assert not any("fewer than 40 storms" in n for n in big[1])
+    assert any("fewer than 100 incidents" in n for n in big[1]) == (n_inc < 100)

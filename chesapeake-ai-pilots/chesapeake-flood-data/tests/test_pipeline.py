@@ -206,3 +206,51 @@ def test_forecast_covering_only_part_of_the_storm_is_not_used(tmp_path):
     full, road, _ = storms.build_storm_table(conn, _rain(), _tide_df())
     f = full[full.start == T("2026-03-03 00:00")].iloc[0]
     assert f.coverage == 0.0 and not f.has_forecast and road.empty
+
+
+class _Resp:
+    def __init__(self, code, body=None):
+        self.status_code, self._b = code, body or {}
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise RuntimeError(f"HTTP {self.status_code}")
+
+    def json(self):
+        return self._b
+
+
+class _Sess:
+    def __init__(self, codes):
+        self.codes, self.calls = list(codes), 0
+
+    def get(self, url, params=None, timeout=None):
+        self.calls += 1
+        c = self.codes.pop(0)
+        return _Resp(c, {"ok": True} if c == 200 else None)
+
+
+@pytest.mark.parametrize("contact,ok", [("me@example.com", True), ("https://example.com/contact", True), ("", False), ("no-contact-here", False), (None, False)])
+def test_nws_requires_identifying_contact(contact, ok):
+    if ok:
+        assert "User-Agent" in nws.session(contact).headers and contact in nws.session(contact).headers["User-Agent"]
+    else:
+        with pytest.raises(ValueError):
+            nws.session(contact)
+
+
+def test_nws_retries_transient_errors_then_gives_up(monkeypatch):
+    sleeps = []
+    monkeypatch.setattr(nws.time, "sleep", lambda s: sleeps.append(s))
+    s = _Sess([503, 429, 200])
+    assert nws.get_json(s, "u") == {"ok": True} and s.calls == 3 and sleeps == [0.5, 1.0]   # backoff doubles
+    s = _Sess([503, 503, 503])
+    with pytest.raises(RuntimeError):
+        nws.get_json(s, "u")
+    assert s.calls == 3                                                                      # exactly `retries` attempts
+    with pytest.raises(nws.NwsError):
+        nws.get_json(_Sess([404]), "u")
+    s = _Sess([400, 200])
+    with pytest.raises(RuntimeError):
+        nws.get_json(s, "u")
+    assert s.calls == 1                                                                      # client errors are not retried
