@@ -1,0 +1,785 @@
+seed,system,k,recall
+1,model (logistic),2.0,0.12727272727272726
+1,model (logistic),4.0,0.23636363636363636
+1,model (logistic),6.0,0.36363636363636365
+1,model (logistic),8.0,0.4
+1,model (logistic),12.0,0.509090909090909
+1,model (logistic),16.0,0.5818181818181818
+1,model (logistic),20.0,0.6363636363636364
+1,model (boosted trees),2.0,0.09090909090909091
+1,model (boosted trees),4.0,0.2
+1,model (boosted trees),6.0,0.2727272727272727
+1,model (boosted trees),8.0,0.34545454545454546
+1,model (boosted trees),12.0,0.45454545454545453
+1,model (boosted trees),16.0,0.5272727272727272
+1,model (boosted trees),20.0,0.5818181818181818
+1,hotspot (count),2.0,0.14545454545454545
+1,hotspot (count),4.0,0.21818181818181817
+1,hotspot (count),6.0,0.3090909090909091
+1,hotspot (count),8.0,0.38181818181818183
+1,hotspot (count),12.0,0.509090909090909
+1,hotspot (count),16.0,0.5636363636363636
+1,hotspot (count),20.0,0.5818181818181818
+1,hotspot (recency-weighted),2.0,0.09090909090909091
+1,hotspot (recency-weighted),4.0,0.12727272727272726
+1,hotspot (recency-weighted),6.0,0.23636363636363636
+1,hotspot (recency-weighted),8.0,0.2727272727272727
+1,hotspot (recency-weighted),12.0,0.4
+1,hotspot (recency-weighted),16.0,0.509090909090909
+1,hotspot (recency-weighted),20.0,0.5818181818181818
+1,lowest elevation,2.0,0.01818181818181818
+1,lowest elevation,4.0,0.03636363636363636
+1,lowest elevation,6.0,0.05454545454545454
+1,lowest elevation,8.0,0.10909090909090909
+1,lowest elevation,12.0,0.2545454545454545
+1,lowest elevation,16.0,0.4727272727272727
+1,lowest elevation,20.0,0.509090909090909
+1,random,2.0,0.01818181818181818
+1,random,4.0,0.07272727272727272
+1,random,6.0,0.10909090909090909
+1,random,8.0,0.16363636363636364
+1,random,12.0,0.2545454545454545
+1,random,16.0,0.2909090909090909
+1,random,20.0,0.34545454545454546
+1,ceiling (true risk; unattainable),2.0,0.14545454545454545
+1,ceiling (true risk; unattainable),4.0,0.2727272727272727
+1,ceiling (true risk; unattainable),6.0,0.36363636363636365
+1,ceiling (true risk; unattainable),8.0,0.43636363636363634
+1,ceiling (true risk; unattainable),12.0,0.5272727272727272
+1,ceiling (true risk; unattainable),16.0,0.6363636363636364
+1,ceiling (true risk; unattainable),20.0,0.7272727272727273
+2,model (logistic),2.0,0.0594059405940594
+2,model (logistic),4.0,0.18811881188118812
+2,model (logistic),6.0,0.22772277227722773
+2,model (logistic),8.0,0.25742574257425743
+2,model (logistic),12.0,0.3564356435643564
+2,model (logistic),16.0,0.43564356435643564
+2,model (logistic),20.0,0.49504950495049505
+2,model (boosted trees),2.0,0.0891089108910891
+2,model (boosted trees),4.0,0.18811881188118812
+2,model (boosted trees),6.0,0.24752475247524752
+2,model (boosted trees),8.0,0.33663366336633666
+2,model (boosted trees),12.0,0.37623762376237624
+2,model (boosted trees),16.0,0.45544554455445546
+2,model (boosted trees),20.0,0.5247524752475248
+2,hotspot (count),2.0,0.13861386138613863
+2,hotspot (count),4.0,0.22772277227722773
+2,hotspot (count),6.0,0.24752475247524752
+2,hotspot (count),8.0,0.3564356435643564
+2,hotspot (count),12.0,0.43564356435643564
+2,hotspot (count),16.0,0.49504950495049505
+2,hotspot (count),20.0,0.5841584158415841
+2,hotspot (recency-weighted),2.0,0.09900990099009901
+2,hotspot (recency-weighted),4.0,0.13861386138613863
+2,hotspot (recency-weighted),6.0,0.2079207920792079
+2,hotspot (recency-weighted),8.0,0.26732673267326734
+2,hotspot (recency-weighted),12.0,0.3564356435643564
+2,hotspot (recency-weighted),16.0,0.45544554455445546
+2,hotspot (recency-weighted),20.0,0.5544554455445545
+2,lowest elevation,2.0,0.0594059405940594
+2,lowest elevation,4.0,0.10891089108910891
+2,lowest elevation,6.0,0.13861386138613863
+2,lowest elevation,8.0,0.18811881188118812
+2,lowest elevation,12.0,0.27722772277227725
+2,lowest elevation,16.0,0.44554455445544555
+2,lowest elevation,20.0,0.4752475247524752
+2,random,2.0,0.019801980198019802
+2,random,4.0,0.04950495049504951
+2,random,6.0,0.07920792079207921
+2,random,8.0,0.10891089108910891
+2,random,12.0,0.2376237623762376
+2,random,16.0,0.2871287128712871
+2,random,20.0,0.32673267326732675
+2,ceiling (true risk; unattainable),2.0,0.07920792079207921
+2,ceiling (true risk; unattainable),4.0,0.2376237623762376
+2,ceiling (true risk; unattainable),6.0,0.32673267326732675
+2,ceiling (true risk; unattainable),8.0,0.37623762376237624
+2,ceiling (true risk; unattainable),12.0,0.43564356435643564
+2,ceiling (true risk; unattainable),16.0,0.5643564356435643
+2,ceiling (true risk; unattainable),20.0,0.6039603960396039
+3,model (logistic),2.0,0.15492957746478872
+3,model (logistic),4.0,0.2535211267605634
+3,model (logistic),6.0,0.352112676056338
+3,model (logistic),8.0,0.4225352112676056
+3,model (logistic),12.0,0.5352112676056338
+3,model (logistic),16.0,0.5774647887323944
+3,model (logistic),20.0,0.7323943661971831
+3,model (boosted trees),2.0,0.09859154929577464
+3,model (boosted trees),4.0,0.16901408450704225
+3,model (boosted trees),6.0,0.2535211267605634
+3,model (boosted trees),8.0,0.38028169014084506
+3,model (boosted trees),12.0,0.49295774647887325
+3,model (boosted trees),16.0,0.6197183098591549
+3,model (boosted trees),20.0,0.6901408450704225
+3,hotspot (count),2.0,0.16901408450704225
+3,hotspot (count),4.0,0.28169014084507044
+3,hotspot (count),6.0,0.36619718309859156
+3,hotspot (count),8.0,0.4507042253521127
+3,hotspot (count),12.0,0.5352112676056338
+3,hotspot (count),16.0,0.6056338028169014
+3,hotspot (count),20.0,0.676056338028169
+3,hotspot (recency-weighted),2.0,0.11267605633802817
+3,hotspot (recency-weighted),4.0,0.23943661971830985
+3,hotspot (recency-weighted),6.0,0.30985915492957744
+3,hotspot (recency-weighted),8.0,0.36619718309859156
+3,hotspot (recency-weighted),12.0,0.4647887323943662
+3,hotspot (recency-weighted),16.0,0.5070422535211268
+3,hotspot (recency-weighted),20.0,0.6056338028169014
+3,lowest elevation,2.0,0.11267605633802817
+3,lowest elevation,4.0,0.14084507042253522
+3,lowest elevation,6.0,0.18309859154929578
+3,lowest elevation,8.0,0.2112676056338028
+3,lowest elevation,12.0,0.38028169014084506
+3,lowest elevation,16.0,0.4225352112676056
+3,lowest elevation,20.0,0.5774647887323944
+3,random,2.0,0.028169014084507043
+3,random,4.0,0.056338028169014086
+3,random,6.0,0.09859154929577464
+3,random,8.0,0.11267605633802817
+3,random,12.0,0.15492957746478872
+3,random,16.0,0.23943661971830985
+3,random,20.0,0.2676056338028169
+3,ceiling (true risk; unattainable),2.0,0.18309859154929578
+3,ceiling (true risk; unattainable),4.0,0.2676056338028169
+3,ceiling (true risk; unattainable),6.0,0.38028169014084506
+3,ceiling (true risk; unattainable),8.0,0.4647887323943662
+3,ceiling (true risk; unattainable),12.0,0.5774647887323944
+3,ceiling (true risk; unattainable),16.0,0.647887323943662
+3,ceiling (true risk; unattainable),20.0,0.704225352112676
+4,model (logistic),2.0,0.0847457627118644
+4,model (logistic),4.0,0.211864406779661
+4,model (logistic),6.0,0.2542372881355932
+4,model (logistic),8.0,0.3305084745762712
+4,model (logistic),12.0,0.4152542372881356
+4,model (logistic),16.0,0.4661016949152542
+4,model (logistic),20.0,0.5084745762711864
+4,model (boosted trees),2.0,0.0847457627118644
+4,model (boosted trees),4.0,0.1864406779661017
+4,model (boosted trees),6.0,0.2457627118644068
+4,model (boosted trees),8.0,0.2966101694915254
+4,model (boosted trees),12.0,0.3813559322033898
+4,model (boosted trees),16.0,0.4576271186440678
+4,model (boosted trees),20.0,0.5254237288135594
+4,hotspot (count),2.0,0.09322033898305085
+4,hotspot (count),4.0,0.211864406779661
+4,hotspot (count),6.0,0.2796610169491525
+4,hotspot (count),8.0,0.3389830508474576
+4,hotspot (count),12.0,0.4152542372881356
+4,hotspot (count),16.0,0.5254237288135594
+4,hotspot (count),20.0,0.5847457627118644
+4,hotspot (recency-weighted),2.0,0.0847457627118644
+4,hotspot (recency-weighted),4.0,0.1694915254237288
+4,hotspot (recency-weighted),6.0,0.211864406779661
+4,hotspot (recency-weighted),8.0,0.3050847457627119
+4,hotspot (recency-weighted),12.0,0.3813559322033898
+4,hotspot (recency-weighted),16.0,0.4745762711864407
+4,hotspot (recency-weighted),20.0,0.5254237288135594
+4,lowest elevation,2.0,0.025423728813559324
+4,lowest elevation,4.0,0.06779661016949153
+4,lowest elevation,6.0,0.16101694915254236
+4,lowest elevation,8.0,0.19491525423728814
+4,lowest elevation,12.0,0.3135593220338983
+4,lowest elevation,16.0,0.3983050847457627
+4,lowest elevation,20.0,0.4406779661016949
+4,random,2.0,0.03389830508474576
+4,random,4.0,0.059322033898305086
+4,random,6.0,0.0847457627118644
+4,random,8.0,0.1440677966101695
+4,random,12.0,0.2288135593220339
+4,random,16.0,0.2542372881355932
+4,random,20.0,0.3559322033898305
+4,ceiling (true risk; unattainable),2.0,0.1271186440677966
+4,ceiling (true risk; unattainable),4.0,0.2288135593220339
+4,ceiling (true risk; unattainable),6.0,0.2796610169491525
+4,ceiling (true risk; unattainable),8.0,0.3389830508474576
+4,ceiling (true risk; unattainable),12.0,0.4322033898305085
+4,ceiling (true risk; unattainable),16.0,0.5084745762711864
+4,ceiling (true risk; unattainable),20.0,0.576271186440678
+5,model (logistic),2.0,0.09523809523809523
+5,model (logistic),4.0,0.21428571428571427
+5,model (logistic),6.0,0.2857142857142857
+5,model (logistic),8.0,0.3333333333333333
+5,model (logistic),12.0,0.5
+5,model (logistic),16.0,0.6190476190476191
+5,model (logistic),20.0,0.6428571428571429
+5,model (boosted trees),2.0,0.09523809523809523
+5,model (boosted trees),4.0,0.11904761904761904
+5,model (boosted trees),6.0,0.19047619047619047
+5,model (boosted trees),8.0,0.23809523809523808
+5,model (boosted trees),12.0,0.42857142857142855
+5,model (boosted trees),16.0,0.5238095238095238
+5,model (boosted trees),20.0,0.5476190476190477
+5,hotspot (count),2.0,0.09523809523809523
+5,hotspot (count),4.0,0.21428571428571427
+5,hotspot (count),6.0,0.2857142857142857
+5,hotspot (count),8.0,0.3333333333333333
+5,hotspot (count),12.0,0.47619047619047616
+5,hotspot (count),16.0,0.5714285714285714
+5,hotspot (count),20.0,0.6666666666666666
+5,hotspot (recency-weighted),2.0,0.047619047619047616
+5,hotspot (recency-weighted),4.0,0.09523809523809523
+5,hotspot (recency-weighted),6.0,0.19047619047619047
+5,hotspot (recency-weighted),8.0,0.2857142857142857
+5,hotspot (recency-weighted),12.0,0.38095238095238093
+5,hotspot (recency-weighted),16.0,0.47619047619047616
+5,hotspot (recency-weighted),20.0,0.5714285714285714
+5,lowest elevation,2.0,0.07142857142857142
+5,lowest elevation,4.0,0.11904761904761904
+5,lowest elevation,6.0,0.19047619047619047
+5,lowest elevation,8.0,0.2619047619047619
+5,lowest elevation,12.0,0.38095238095238093
+5,lowest elevation,16.0,0.5238095238095238
+5,lowest elevation,20.0,0.6190476190476191
+5,random,2.0,0.0
+5,random,4.0,0.0
+5,random,6.0,0.047619047619047616
+5,random,8.0,0.047619047619047616
+5,random,12.0,0.047619047619047616
+5,random,16.0,0.16666666666666666
+5,random,20.0,0.2619047619047619
+5,ceiling (true risk; unattainable),2.0,0.14285714285714285
+5,ceiling (true risk; unattainable),4.0,0.21428571428571427
+5,ceiling (true risk; unattainable),6.0,0.3333333333333333
+5,ceiling (true risk; unattainable),8.0,0.4523809523809524
+5,ceiling (true risk; unattainable),12.0,0.5714285714285714
+5,ceiling (true risk; unattainable),16.0,0.6666666666666666
+5,ceiling (true risk; unattainable),20.0,0.6904761904761905
+6,model (logistic),2.0,0.26666666666666666
+6,model (logistic),4.0,0.38333333333333336
+6,model (logistic),6.0,0.5
+6,model (logistic),8.0,0.5666666666666667
+6,model (logistic),12.0,0.65
+6,model (logistic),16.0,0.7166666666666667
+6,model (logistic),20.0,0.8
+6,model (boosted trees),2.0,0.25
+6,model (boosted trees),4.0,0.4166666666666667
+6,model (boosted trees),6.0,0.5
+6,model (boosted trees),8.0,0.5333333333333333
+6,model (boosted trees),12.0,0.65
+6,model (boosted trees),16.0,0.75
+6,model (boosted trees),20.0,0.8
+6,hotspot (count),2.0,0.26666666666666666
+6,hotspot (count),4.0,0.43333333333333335
+6,hotspot (count),6.0,0.5166666666666667
+6,hotspot (count),8.0,0.55
+6,hotspot (count),12.0,0.6833333333333333
+6,hotspot (count),16.0,0.7
+6,hotspot (count),20.0,0.75
+6,hotspot (recency-weighted),2.0,0.25
+6,hotspot (recency-weighted),4.0,0.4166666666666667
+6,hotspot (recency-weighted),6.0,0.5166666666666667
+6,hotspot (recency-weighted),8.0,0.5666666666666667
+6,hotspot (recency-weighted),12.0,0.6
+6,hotspot (recency-weighted),16.0,0.6666666666666666
+6,hotspot (recency-weighted),20.0,0.7166666666666667
+6,lowest elevation,2.0,0.0
+6,lowest elevation,4.0,0.18333333333333332
+6,lowest elevation,6.0,0.31666666666666665
+6,lowest elevation,8.0,0.3333333333333333
+6,lowest elevation,12.0,0.48333333333333334
+6,lowest elevation,16.0,0.55
+6,lowest elevation,20.0,0.6666666666666666
+6,random,2.0,0.05
+6,random,4.0,0.11666666666666667
+6,random,6.0,0.13333333333333333
+6,random,8.0,0.16666666666666666
+6,random,12.0,0.21666666666666667
+6,random,16.0,0.31666666666666665
+6,random,20.0,0.36666666666666664
+6,ceiling (true risk; unattainable),2.0,0.31666666666666665
+6,ceiling (true risk; unattainable),4.0,0.38333333333333336
+6,ceiling (true risk; unattainable),6.0,0.48333333333333334
+6,ceiling (true risk; unattainable),8.0,0.6
+6,ceiling (true risk; unattainable),12.0,0.7333333333333333
+6,ceiling (true risk; unattainable),16.0,0.7666666666666667
+6,ceiling (true risk; unattainable),20.0,0.8333333333333334
+7,model (logistic),2.0,0.09782608695652174
+7,model (logistic),4.0,0.18478260869565216
+7,model (logistic),6.0,0.30434782608695654
+7,model (logistic),8.0,0.32608695652173914
+7,model (logistic),12.0,0.391304347826087
+7,model (logistic),16.0,0.5217391304347826
+7,model (logistic),20.0,0.5978260869565217
+7,model (boosted trees),2.0,0.09782608695652174
+7,model (boosted trees),4.0,0.13043478260869565
+7,model (boosted trees),6.0,0.1956521739130435
+7,model (boosted trees),8.0,0.2391304347826087
+7,model (boosted trees),12.0,0.34782608695652173
+7,model (boosted trees),16.0,0.43478260869565216
+7,model (boosted trees),20.0,0.5434782608695652
+7,hotspot (count),2.0,0.09782608695652174
+7,hotspot (count),4.0,0.20652173913043478
+7,hotspot (count),6.0,0.25
+7,hotspot (count),8.0,0.2826086956521739
+7,hotspot (count),12.0,0.3804347826086957
+7,hotspot (count),16.0,0.4782608695652174
+7,hotspot (count),20.0,0.5869565217391305
+7,hotspot (recency-weighted),2.0,0.10869565217391304
+7,hotspot (recency-weighted),4.0,0.16304347826086957
+7,hotspot (recency-weighted),6.0,0.21739130434782608
+7,hotspot (recency-weighted),8.0,0.2608695652173913
+7,hotspot (recency-weighted),12.0,0.34782608695652173
+7,hotspot (recency-weighted),16.0,0.42391304347826086
+7,hotspot (recency-weighted),20.0,0.5434782608695652
+7,lowest elevation,2.0,0.010869565217391304
+7,lowest elevation,4.0,0.05434782608695652
+7,lowest elevation,6.0,0.10869565217391304
+7,lowest elevation,8.0,0.14130434782608695
+7,lowest elevation,12.0,0.2608695652173913
+7,lowest elevation,16.0,0.31521739130434784
+7,lowest elevation,20.0,0.40217391304347827
+7,random,2.0,0.010869565217391304
+7,random,4.0,0.043478260869565216
+7,random,6.0,0.06521739130434782
+7,random,8.0,0.08695652173913043
+7,random,12.0,0.15217391304347827
+7,random,16.0,0.21739130434782608
+7,random,20.0,0.30434782608695654
+7,ceiling (true risk; unattainable),2.0,0.10869565217391304
+7,ceiling (true risk; unattainable),4.0,0.20652173913043478
+7,ceiling (true risk; unattainable),6.0,0.2826086956521739
+7,ceiling (true risk; unattainable),8.0,0.33695652173913043
+7,ceiling (true risk; unattainable),12.0,0.40217391304347827
+7,ceiling (true risk; unattainable),16.0,0.5108695652173914
+7,ceiling (true risk; unattainable),20.0,0.5760869565217391
+8,model (logistic),2.0,0.06
+8,model (logistic),4.0,0.09
+8,model (logistic),6.0,0.14
+8,model (logistic),8.0,0.2
+8,model (logistic),12.0,0.29
+8,model (logistic),16.0,0.35
+8,model (logistic),20.0,0.44
+8,model (boosted trees),2.0,0.05
+8,model (boosted trees),4.0,0.08
+8,model (boosted trees),6.0,0.15
+8,model (boosted trees),8.0,0.21
+8,model (boosted trees),12.0,0.29
+8,model (boosted trees),16.0,0.35
+8,model (boosted trees),20.0,0.4
+8,hotspot (count),2.0,0.06
+8,hotspot (count),4.0,0.09
+8,hotspot (count),6.0,0.12
+8,hotspot (count),8.0,0.18
+8,hotspot (count),12.0,0.29
+8,hotspot (count),16.0,0.37
+8,hotspot (count),20.0,0.43
+8,hotspot (recency-weighted),2.0,0.04
+8,hotspot (recency-weighted),4.0,0.09
+8,hotspot (recency-weighted),6.0,0.13
+8,hotspot (recency-weighted),8.0,0.15
+8,hotspot (recency-weighted),12.0,0.25
+8,hotspot (recency-weighted),16.0,0.31
+8,hotspot (recency-weighted),20.0,0.4
+8,lowest elevation,2.0,0.02
+8,lowest elevation,4.0,0.07
+8,lowest elevation,6.0,0.11
+8,lowest elevation,8.0,0.14
+8,lowest elevation,12.0,0.22
+8,lowest elevation,16.0,0.31
+8,lowest elevation,20.0,0.36
+8,random,2.0,0.02
+8,random,4.0,0.06
+8,random,6.0,0.09
+8,random,8.0,0.12
+8,random,12.0,0.18
+8,random,16.0,0.26
+8,random,20.0,0.35
+8,ceiling (true risk; unattainable),2.0,0.06
+8,ceiling (true risk; unattainable),4.0,0.11
+8,ceiling (true risk; unattainable),6.0,0.15
+8,ceiling (true risk; unattainable),8.0,0.22
+8,ceiling (true risk; unattainable),12.0,0.31
+8,ceiling (true risk; unattainable),16.0,0.38
+8,ceiling (true risk; unattainable),20.0,0.44
+9,model (logistic),2.0,0.10679611650485436
+9,model (logistic),4.0,0.1650485436893204
+9,model (logistic),6.0,0.23300970873786409
+9,model (logistic),8.0,0.27184466019417475
+9,model (logistic),12.0,0.36893203883495146
+9,model (logistic),16.0,0.49514563106796117
+9,model (logistic),20.0,0.5631067961165048
+9,model (boosted trees),2.0,0.0970873786407767
+9,model (boosted trees),4.0,0.14563106796116504
+9,model (boosted trees),6.0,0.22330097087378642
+9,model (boosted trees),8.0,0.27184466019417475
+9,model (boosted trees),12.0,0.3592233009708738
+9,model (boosted trees),16.0,0.42718446601941745
+9,model (boosted trees),20.0,0.5048543689320388
+9,hotspot (count),2.0,0.0970873786407767
+9,hotspot (count),4.0,0.17475728155339806
+9,hotspot (count),6.0,0.2621359223300971
+9,hotspot (count),8.0,0.3300970873786408
+9,hotspot (count),12.0,0.44660194174757284
+9,hotspot (count),16.0,0.5048543689320388
+9,hotspot (count),20.0,0.6019417475728155
+9,hotspot (recency-weighted),2.0,0.0970873786407767
+9,hotspot (recency-weighted),4.0,0.17475728155339806
+9,hotspot (recency-weighted),6.0,0.1941747572815534
+9,hotspot (recency-weighted),8.0,0.27184466019417475
+9,hotspot (recency-weighted),12.0,0.36893203883495146
+9,hotspot (recency-weighted),16.0,0.44660194174757284
+9,hotspot (recency-weighted),20.0,0.5436893203883495
+9,lowest elevation,2.0,0.11650485436893204
+9,lowest elevation,4.0,0.1650485436893204
+9,lowest elevation,6.0,0.20388349514563106
+9,lowest elevation,8.0,0.23300970873786409
+9,lowest elevation,12.0,0.30097087378640774
+9,lowest elevation,16.0,0.3786407766990291
+9,lowest elevation,20.0,0.42718446601941745
+9,random,2.0,0.019417475728155338
+9,random,4.0,0.05825242718446602
+9,random,6.0,0.10679611650485436
+9,random,8.0,0.13592233009708737
+9,random,12.0,0.17475728155339806
+9,random,16.0,0.21359223300970873
+9,random,20.0,0.27184466019417475
+9,ceiling (true risk; unattainable),2.0,0.10679611650485436
+9,ceiling (true risk; unattainable),4.0,0.1553398058252427
+9,ceiling (true risk; unattainable),6.0,0.22330097087378642
+9,ceiling (true risk; unattainable),8.0,0.3300970873786408
+9,ceiling (true risk; unattainable),12.0,0.4368932038834951
+9,ceiling (true risk; unattainable),16.0,0.5242718446601942
+9,ceiling (true risk; unattainable),20.0,0.6019417475728155
+10,model (logistic),2.0,0.09722222222222222
+10,model (logistic),4.0,0.19444444444444445
+10,model (logistic),6.0,0.2777777777777778
+10,model (logistic),8.0,0.3611111111111111
+10,model (logistic),12.0,0.4305555555555556
+10,model (logistic),16.0,0.5277777777777778
+10,model (logistic),20.0,0.6527777777777778
+10,model (boosted trees),2.0,0.08333333333333333
+10,model (boosted trees),4.0,0.18055555555555555
+10,model (boosted trees),6.0,0.2638888888888889
+10,model (boosted trees),8.0,0.3611111111111111
+10,model (boosted trees),12.0,0.4166666666666667
+10,model (boosted trees),16.0,0.4861111111111111
+10,model (boosted trees),20.0,0.5972222222222222
+10,hotspot (count),2.0,0.125
+10,hotspot (count),4.0,0.19444444444444445
+10,hotspot (count),6.0,0.2638888888888889
+10,hotspot (count),8.0,0.375
+10,hotspot (count),12.0,0.5
+10,hotspot (count),16.0,0.5555555555555556
+10,hotspot (count),20.0,0.6527777777777778
+10,hotspot (recency-weighted),2.0,0.09722222222222222
+10,hotspot (recency-weighted),4.0,0.1527777777777778
+10,hotspot (recency-weighted),6.0,0.2638888888888889
+10,hotspot (recency-weighted),8.0,0.3333333333333333
+10,hotspot (recency-weighted),12.0,0.4027777777777778
+10,hotspot (recency-weighted),16.0,0.5
+10,hotspot (recency-weighted),20.0,0.5833333333333334
+10,lowest elevation,2.0,0.06944444444444445
+10,lowest elevation,4.0,0.09722222222222222
+10,lowest elevation,6.0,0.16666666666666666
+10,lowest elevation,8.0,0.18055555555555555
+10,lowest elevation,12.0,0.25
+10,lowest elevation,16.0,0.3611111111111111
+10,lowest elevation,20.0,0.4305555555555556
+10,random,2.0,0.05555555555555555
+10,random,4.0,0.06944444444444445
+10,random,6.0,0.125
+10,random,8.0,0.1388888888888889
+10,random,12.0,0.2222222222222222
+10,random,16.0,0.2777777777777778
+10,random,20.0,0.4027777777777778
+10,ceiling (true risk; unattainable),2.0,0.1388888888888889
+10,ceiling (true risk; unattainable),4.0,0.2361111111111111
+10,ceiling (true risk; unattainable),6.0,0.3055555555555556
+10,ceiling (true risk; unattainable),8.0,0.3888888888888889
+10,ceiling (true risk; unattainable),12.0,0.5277777777777778
+10,ceiling (true risk; unattainable),16.0,0.5972222222222222
+10,ceiling (true risk; unattainable),20.0,0.6805555555555556
+11,model (logistic),2.0,0.12318840579710146
+11,model (logistic),4.0,0.2463768115942029
+11,model (logistic),6.0,0.3115942028985507
+11,model (logistic),8.0,0.37681159420289856
+11,model (logistic),12.0,0.4420289855072464
+11,model (logistic),16.0,0.5144927536231884
+11,model (logistic),20.0,0.5942028985507246
+11,model (boosted trees),2.0,0.10869565217391304
+11,model (boosted trees),4.0,0.17391304347826086
+11,model (boosted trees),6.0,0.2246376811594203
+11,model (boosted trees),8.0,0.2971014492753623
+11,model (boosted trees),12.0,0.391304347826087
+11,model (boosted trees),16.0,0.5144927536231884
+11,model (boosted trees),20.0,0.572463768115942
+11,hotspot (count),2.0,0.13043478260869565
+11,hotspot (count),4.0,0.2391304347826087
+11,hotspot (count),6.0,0.2971014492753623
+11,hotspot (count),8.0,0.35507246376811596
+11,hotspot (count),12.0,0.4420289855072464
+11,hotspot (count),16.0,0.5652173913043478
+11,hotspot (count),20.0,0.6231884057971014
+11,hotspot (recency-weighted),2.0,0.11594202898550725
+11,hotspot (recency-weighted),4.0,0.21014492753623187
+11,hotspot (recency-weighted),6.0,0.2971014492753623
+11,hotspot (recency-weighted),8.0,0.3333333333333333
+11,hotspot (recency-weighted),12.0,0.4420289855072464
+11,hotspot (recency-weighted),16.0,0.4927536231884058
+11,hotspot (recency-weighted),20.0,0.572463768115942
+11,lowest elevation,2.0,0.043478260869565216
+11,lowest elevation,4.0,0.10869565217391304
+11,lowest elevation,6.0,0.13043478260869565
+11,lowest elevation,8.0,0.17391304347826086
+11,lowest elevation,12.0,0.2246376811594203
+11,lowest elevation,16.0,0.2898550724637681
+11,lowest elevation,20.0,0.4492753623188406
+11,random,2.0,0.014492753623188406
+11,random,4.0,0.06521739130434782
+11,random,6.0,0.07971014492753623
+11,random,8.0,0.09420289855072464
+11,random,12.0,0.14492753623188406
+11,random,16.0,0.21739130434782608
+11,random,20.0,0.30434782608695654
+11,ceiling (true risk; unattainable),2.0,0.15217391304347827
+11,ceiling (true risk; unattainable),4.0,0.2463768115942029
+11,ceiling (true risk; unattainable),6.0,0.3188405797101449
+11,ceiling (true risk; unattainable),8.0,0.38405797101449274
+11,ceiling (true risk; unattainable),12.0,0.4927536231884058
+11,ceiling (true risk; unattainable),16.0,0.5942028985507246
+11,ceiling (true risk; unattainable),20.0,0.644927536231884
+12,model (logistic),2.0,0.11
+12,model (logistic),4.0,0.26
+12,model (logistic),6.0,0.34
+12,model (logistic),8.0,0.39
+12,model (logistic),12.0,0.45
+12,model (logistic),16.0,0.53
+12,model (logistic),20.0,0.63
+12,model (boosted trees),2.0,0.11
+12,model (boosted trees),4.0,0.22
+12,model (boosted trees),6.0,0.32
+12,model (boosted trees),8.0,0.37
+12,model (boosted trees),12.0,0.45
+12,model (boosted trees),16.0,0.56
+12,model (boosted trees),20.0,0.63
+12,hotspot (count),2.0,0.14
+12,hotspot (count),4.0,0.28
+12,hotspot (count),6.0,0.34
+12,hotspot (count),8.0,0.39
+12,hotspot (count),12.0,0.48
+12,hotspot (count),16.0,0.6
+12,hotspot (count),20.0,0.67
+12,hotspot (recency-weighted),2.0,0.14
+12,hotspot (recency-weighted),4.0,0.22
+12,hotspot (recency-weighted),6.0,0.28
+12,hotspot (recency-weighted),8.0,0.34
+12,hotspot (recency-weighted),12.0,0.44
+12,hotspot (recency-weighted),16.0,0.52
+12,hotspot (recency-weighted),20.0,0.62
+12,lowest elevation,2.0,0.07
+12,lowest elevation,4.0,0.15
+12,lowest elevation,6.0,0.21
+12,lowest elevation,8.0,0.34
+12,lowest elevation,12.0,0.43
+12,lowest elevation,16.0,0.48
+12,lowest elevation,20.0,0.55
+12,random,2.0,0.03
+12,random,4.0,0.1
+12,random,6.0,0.15
+12,random,8.0,0.18
+12,random,12.0,0.27
+12,random,16.0,0.36
+12,random,20.0,0.43
+12,ceiling (true risk; unattainable),2.0,0.15
+12,ceiling (true risk; unattainable),4.0,0.28
+12,ceiling (true risk; unattainable),6.0,0.34
+12,ceiling (true risk; unattainable),8.0,0.39
+12,ceiling (true risk; unattainable),12.0,0.47
+12,ceiling (true risk; unattainable),16.0,0.52
+12,ceiling (true risk; unattainable),20.0,0.6
+13,model (logistic),2.0,0.08163265306122448
+13,model (logistic),4.0,0.12244897959183673
+13,model (logistic),6.0,0.20408163265306123
+13,model (logistic),8.0,0.2857142857142857
+13,model (logistic),12.0,0.42857142857142855
+13,model (logistic),16.0,0.5714285714285714
+13,model (logistic),20.0,0.6122448979591837
+13,model (boosted trees),2.0,0.10204081632653061
+13,model (boosted trees),4.0,0.14285714285714285
+13,model (boosted trees),6.0,0.2653061224489796
+13,model (boosted trees),8.0,0.30612244897959184
+13,model (boosted trees),12.0,0.3673469387755102
+13,model (boosted trees),16.0,0.4489795918367347
+13,model (boosted trees),20.0,0.5714285714285714
+13,hotspot (count),2.0,0.08163265306122448
+13,hotspot (count),4.0,0.16326530612244897
+13,hotspot (count),6.0,0.2857142857142857
+13,hotspot (count),8.0,0.3469387755102041
+13,hotspot (count),12.0,0.40816326530612246
+13,hotspot (count),16.0,0.5102040816326531
+13,hotspot (count),20.0,0.6326530612244898
+13,hotspot (recency-weighted),2.0,0.061224489795918366
+13,hotspot (recency-weighted),4.0,0.08163265306122448
+13,hotspot (recency-weighted),6.0,0.14285714285714285
+13,hotspot (recency-weighted),8.0,0.16326530612244897
+13,hotspot (recency-weighted),12.0,0.2653061224489796
+13,hotspot (recency-weighted),16.0,0.42857142857142855
+13,hotspot (recency-weighted),20.0,0.5918367346938775
+13,lowest elevation,2.0,0.061224489795918366
+13,lowest elevation,4.0,0.12244897959183673
+13,lowest elevation,6.0,0.14285714285714285
+13,lowest elevation,8.0,0.1836734693877551
+13,lowest elevation,12.0,0.3877551020408163
+13,lowest elevation,16.0,0.4897959183673469
+13,lowest elevation,20.0,0.5918367346938775
+13,random,2.0,0.10204081632653061
+13,random,4.0,0.16326530612244897
+13,random,6.0,0.2653061224489796
+13,random,8.0,0.2857142857142857
+13,random,12.0,0.32653061224489793
+13,random,16.0,0.42857142857142855
+13,random,20.0,0.5102040816326531
+13,ceiling (true risk; unattainable),2.0,0.10204081632653061
+13,ceiling (true risk; unattainable),4.0,0.16326530612244897
+13,ceiling (true risk; unattainable),6.0,0.30612244897959184
+13,ceiling (true risk; unattainable),8.0,0.40816326530612246
+13,ceiling (true risk; unattainable),12.0,0.5510204081632653
+13,ceiling (true risk; unattainable),16.0,0.6326530612244898
+13,ceiling (true risk; unattainable),20.0,0.7551020408163265
+14,model (logistic),2.0,0.1111111111111111
+14,model (logistic),4.0,0.19444444444444445
+14,model (logistic),6.0,0.2361111111111111
+14,model (logistic),8.0,0.3055555555555556
+14,model (logistic),12.0,0.375
+14,model (logistic),16.0,0.4444444444444444
+14,model (logistic),20.0,0.5277777777777778
+14,model (boosted trees),2.0,0.05555555555555555
+14,model (boosted trees),4.0,0.125
+14,model (boosted trees),6.0,0.16666666666666666
+14,model (boosted trees),8.0,0.20833333333333334
+14,model (boosted trees),12.0,0.3194444444444444
+14,model (boosted trees),16.0,0.4027777777777778
+14,model (boosted trees),20.0,0.5277777777777778
+14,hotspot (count),2.0,0.125
+14,hotspot (count),4.0,0.16666666666666666
+14,hotspot (count),6.0,0.25
+14,hotspot (count),8.0,0.3194444444444444
+14,hotspot (count),12.0,0.375
+14,hotspot (count),16.0,0.5138888888888888
+14,hotspot (count),20.0,0.5277777777777778
+14,hotspot (recency-weighted),2.0,0.06944444444444445
+14,hotspot (recency-weighted),4.0,0.125
+14,hotspot (recency-weighted),6.0,0.19444444444444445
+14,hotspot (recency-weighted),8.0,0.2222222222222222
+14,hotspot (recency-weighted),12.0,0.3333333333333333
+14,hotspot (recency-weighted),16.0,0.4305555555555556
+14,hotspot (recency-weighted),20.0,0.5
+14,lowest elevation,2.0,0.027777777777777776
+14,lowest elevation,4.0,0.1388888888888889
+14,lowest elevation,6.0,0.20833333333333334
+14,lowest elevation,8.0,0.25
+14,lowest elevation,12.0,0.3055555555555556
+14,lowest elevation,16.0,0.4166666666666667
+14,lowest elevation,20.0,0.5138888888888888
+14,random,2.0,0.027777777777777776
+14,random,4.0,0.06944444444444445
+14,random,6.0,0.09722222222222222
+14,random,8.0,0.09722222222222222
+14,random,12.0,0.19444444444444445
+14,random,16.0,0.2638888888888889
+14,random,20.0,0.3055555555555556
+14,ceiling (true risk; unattainable),2.0,0.125
+14,ceiling (true risk; unattainable),4.0,0.19444444444444445
+14,ceiling (true risk; unattainable),6.0,0.2638888888888889
+14,ceiling (true risk; unattainable),8.0,0.3472222222222222
+14,ceiling (true risk; unattainable),12.0,0.4861111111111111
+14,ceiling (true risk; unattainable),16.0,0.5277777777777778
+14,ceiling (true risk; unattainable),20.0,0.5833333333333334
+15,model (logistic),2.0,0.11290322580645161
+15,model (logistic),4.0,0.14516129032258066
+15,model (logistic),6.0,0.24193548387096775
+15,model (logistic),8.0,0.27419354838709675
+15,model (logistic),12.0,0.43548387096774194
+15,model (logistic),16.0,0.532258064516129
+15,model (logistic),20.0,0.6129032258064516
+15,model (boosted trees),2.0,0.03225806451612903
+15,model (boosted trees),4.0,0.1774193548387097
+15,model (boosted trees),6.0,0.24193548387096775
+15,model (boosted trees),8.0,0.3225806451612903
+15,model (boosted trees),12.0,0.4032258064516129
+15,model (boosted trees),16.0,0.46774193548387094
+15,model (boosted trees),20.0,0.5483870967741935
+15,hotspot (count),2.0,0.11290322580645161
+15,hotspot (count),4.0,0.16129032258064516
+15,hotspot (count),6.0,0.25806451612903225
+15,hotspot (count),8.0,0.3225806451612903
+15,hotspot (count),12.0,0.3709677419354839
+15,hotspot (count),16.0,0.4838709677419355
+15,hotspot (count),20.0,0.5645161290322581
+15,hotspot (recency-weighted),2.0,0.0967741935483871
+15,hotspot (recency-weighted),4.0,0.12903225806451613
+15,hotspot (recency-weighted),6.0,0.16129032258064516
+15,hotspot (recency-weighted),8.0,0.27419354838709675
+15,hotspot (recency-weighted),12.0,0.3387096774193548
+15,hotspot (recency-weighted),16.0,0.4032258064516129
+15,hotspot (recency-weighted),20.0,0.46774193548387094
+15,lowest elevation,2.0,0.06451612903225806
+15,lowest elevation,4.0,0.11290322580645161
+15,lowest elevation,6.0,0.1774193548387097
+15,lowest elevation,8.0,0.3064516129032258
+15,lowest elevation,12.0,0.3387096774193548
+15,lowest elevation,16.0,0.46774193548387094
+15,lowest elevation,20.0,0.5806451612903226
+15,random,2.0,0.04838709677419355
+15,random,4.0,0.0967741935483871
+15,random,6.0,0.1774193548387097
+15,random,8.0,0.20967741935483872
+15,random,12.0,0.27419354838709675
+15,random,16.0,0.3225806451612903
+15,random,20.0,0.4032258064516129
+15,ceiling (true risk; unattainable),2.0,0.11290322580645161
+15,ceiling (true risk; unattainable),4.0,0.1935483870967742
+15,ceiling (true risk; unattainable),6.0,0.2903225806451613
+15,ceiling (true risk; unattainable),8.0,0.3709677419354839
+15,ceiling (true risk; unattainable),12.0,0.43548387096774194
+15,ceiling (true risk; unattainable),16.0,0.5161290322580645
+15,ceiling (true risk; unattainable),20.0,0.5967741935483871
+16,model (logistic),2.0,0.11764705882352941
+16,model (logistic),4.0,0.27450980392156865
+16,model (logistic),6.0,0.39215686274509803
+16,model (logistic),8.0,0.45098039215686275
+16,model (logistic),12.0,0.5490196078431373
+16,model (logistic),16.0,0.6274509803921569
+16,model (logistic),20.0,0.6274509803921569
+16,model (boosted trees),2.0,0.09803921568627451
+16,model (boosted trees),4.0,0.2549019607843137
+16,model (boosted trees),6.0,0.35294117647058826
+16,model (boosted trees),8.0,0.43137254901960786
+16,model (boosted trees),12.0,0.5490196078431373
+16,model (boosted trees),16.0,0.5882352941176471
+16,model (boosted trees),20.0,0.6470588235294118
+16,hotspot (count),2.0,0.13725490196078433
+16,hotspot (count),4.0,0.27450980392156865
+16,hotspot (count),6.0,0.35294117647058826
+16,hotspot (count),8.0,0.43137254901960786
+16,hotspot (count),12.0,0.47058823529411764
+16,hotspot (count),16.0,0.5882352941176471
+16,hotspot (count),20.0,0.7058823529411765
+16,hotspot (recency-weighted),2.0,0.0784313725490196
+16,hotspot (recency-weighted),4.0,0.23529411764705882
+16,hotspot (recency-weighted),6.0,0.3137254901960784
+16,hotspot (recency-weighted),8.0,0.3137254901960784
+16,hotspot (recency-weighted),12.0,0.39215686274509803
+16,hotspot (recency-weighted),16.0,0.5294117647058824
+16,hotspot (recency-weighted),20.0,0.5686274509803921
+16,lowest elevation,2.0,0.11764705882352941
+16,lowest elevation,4.0,0.13725490196078433
+16,lowest elevation,6.0,0.13725490196078433
+16,lowest elevation,8.0,0.17647058823529413
+16,lowest elevation,12.0,0.27450980392156865
+16,lowest elevation,16.0,0.3137254901960784
+16,lowest elevation,20.0,0.43137254901960786
+16,random,2.0,0.0392156862745098
+16,random,4.0,0.09803921568627451
+16,random,6.0,0.09803921568627451
+16,random,8.0,0.09803921568627451
+16,random,12.0,0.17647058823529413
+16,random,16.0,0.27450980392156865
+16,random,20.0,0.4117647058823529
+16,ceiling (true risk; unattainable),2.0,0.17647058823529413
+16,ceiling (true risk; unattainable),4.0,0.3333333333333333
+16,ceiling (true risk; unattainable),6.0,0.43137254901960786
+16,ceiling (true risk; unattainable),8.0,0.49019607843137253
+16,ceiling (true risk; unattainable),12.0,0.5686274509803921
+16,ceiling (true risk; unattainable),16.0,0.6470588235294118
+16,ceiling (true risk; unattainable),20.0,0.7450980392156863

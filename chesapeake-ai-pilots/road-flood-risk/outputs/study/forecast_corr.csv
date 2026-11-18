@@ -1,0 +1,177 @@
+seed,scenario,spearman_forecast_vs_incident_count
+1,history window = 3 storms,0.5143524048282958
+2,history window = 3 storms,0.6809774160446029
+3,history window = 3 storms,0.7328354062572107
+4,history window = 3 storms,0.7859340836522043
+5,history window = 3 storms,0.6726228036631084
+6,history window = 3 storms,0.5616487891964907
+7,history window = 3 storms,0.5254706806929871
+8,history window = 3 storms,0.6487390102423622
+9,history window = 3 storms,0.6002401246312522
+10,history window = 3 storms,0.743363816071746
+11,history window = 3 storms,0.7985156754475514
+12,history window = 3 storms,0.5583998288282237
+13,history window = 3 storms,0.6083871720046425
+14,history window = 3 storms,0.559140152948669
+15,history window = 3 storms,0.5996952828856468
+16,history window = 3 storms,0.6552275797544035
+1,history window = 6 storms,0.5143524048282958
+2,history window = 6 storms,0.6809774160446029
+3,history window = 6 storms,0.7328354062572107
+4,history window = 6 storms,0.7859340836522043
+5,history window = 6 storms,0.6726228036631084
+6,history window = 6 storms,0.5616487891964907
+7,history window = 6 storms,0.5254706806929871
+8,history window = 6 storms,0.6487390102423622
+9,history window = 6 storms,0.6002401246312522
+10,history window = 6 storms,0.743363816071746
+11,history window = 6 storms,0.7985156754475514
+12,history window = 6 storms,0.5583998288282237
+13,history window = 6 storms,0.6083871720046425
+14,history window = 6 storms,0.559140152948669
+15,history window = 6 storms,0.5996952828856468
+16,history window = 6 storms,0.6552275797544035
+1,history window = 12 storms,0.5143524048282958
+2,history window = 12 storms,0.6809774160446029
+3,history window = 12 storms,0.7328354062572107
+4,history window = 12 storms,0.7859340836522043
+5,history window = 12 storms,0.6726228036631084
+6,history window = 12 storms,0.5616487891964907
+7,history window = 12 storms,0.5254706806929871
+8,history window = 12 storms,0.6487390102423622
+9,history window = 12 storms,0.6002401246312522
+10,history window = 12 storms,0.743363816071746
+11,history window = 12 storms,0.7985156754475514
+12,history window = 12 storms,0.5583998288282237
+13,history window = 12 storms,0.6083871720046425
+14,history window = 12 storms,0.559140152948669
+15,history window = 12 storms,0.5996952828856468
+16,history window = 12 storms,0.6552275797544035
+1,history window = 24 storms,0.5143524048282958
+2,history window = 24 storms,0.6809774160446029
+3,history window = 24 storms,0.7328354062572107
+4,history window = 24 storms,0.7859340836522043
+5,history window = 24 storms,0.6726228036631084
+6,history window = 24 storms,0.5616487891964907
+7,history window = 24 storms,0.5254706806929871
+8,history window = 24 storms,0.6487390102423622
+9,history window = 24 storms,0.6002401246312522
+10,history window = 24 storms,0.743363816071746
+11,history window = 24 storms,0.7985156754475514
+12,history window = 24 storms,0.5583998288282237
+13,history window = 24 storms,0.6083871720046425
+14,history window = 24 storms,0.559140152948669
+15,history window = 24 storms,0.5996952828856468
+16,history window = 24 storms,0.6552275797544035
+1,history window = all storms,0.5143524048282958
+2,history window = all storms,0.6809774160446029
+3,history window = all storms,0.7328354062572107
+4,history window = all storms,0.7859340836522043
+5,history window = all storms,0.6726228036631084
+6,history window = all storms,0.5616487891964907
+7,history window = all storms,0.5254706806929871
+8,history window = all storms,0.6487390102423622
+9,history window = all storms,0.6002401246312522
+10,history window = all storms,0.743363816071746
+11,history window = all storms,0.7985156754475514
+12,history window = all storms,0.5583998288282237
+13,history window = all storms,0.6083871720046425
+14,history window = all storms,0.559140152948669
+15,history window = all storms,0.5996952828856468
+16,history window = all storms,0.6552275797544035
+1,"drift (40% of segments change), window = all",0.6308266723886441
+2,"drift (40% of segments change), window = all",0.6849555831899383
+3,"drift (40% of segments change), window = all",0.6653214876863436
+4,"drift (40% of segments change), window = all",0.7377856156469378
+5,"drift (40% of segments change), window = all",0.5827738341746256
+6,"drift (40% of segments change), window = all",0.5278587891986718
+7,"drift (40% of segments change), window = all",0.5705698664223924
+8,"drift (40% of segments change), window = all",0.7221098194829038
+9,"drift (40% of segments change), window = all",0.8089373532771887
+10,"drift (40% of segments change), window = all",0.6887232315566412
+11,"drift (40% of segments change), window = all",0.7945136221974209
+12,"drift (40% of segments change), window = all",0.6813163248441224
+13,"drift (40% of segments change), window = all",0.697422044833493
+14,"drift (40% of segments change), window = all",0.5947968002370363
+15,"drift (40% of segments change), window = all",0.6705043049148576
+16,"drift (40% of segments change), window = all",0.5570469352196846
+1,"drift (40% of segments change), window = 12",0.6308266723886441
+2,"drift (40% of segments change), window = 12",0.6849555831899383
+3,"drift (40% of segments change), window = 12",0.6653214876863436
+4,"drift (40% of segments change), window = 12",0.7377856156469378
+5,"drift (40% of segments change), window = 12",0.5827738341746256
+6,"drift (40% of segments change), window = 12",0.5278587891986718
+7,"drift (40% of segments change), window = 12",0.5705698664223924
+8,"drift (40% of segments change), window = 12",0.7221098194829038
+9,"drift (40% of segments change), window = 12",0.8089373532771887
+10,"drift (40% of segments change), window = 12",0.6887232315566412
+11,"drift (40% of segments change), window = 12",0.7945136221974209
+12,"drift (40% of segments change), window = 12",0.6813163248441224
+13,"drift (40% of segments change), window = 12",0.697422044833493
+14,"drift (40% of segments change), window = 12",0.5947968002370363
+15,"drift (40% of segments change), window = 12",0.6705043049148576
+16,"drift (40% of segments change), window = 12",0.5570469352196846
+1,reporting bias (quiet roads under-reported),0.48930955038710217
+2,reporting bias (quiet roads under-reported),0.6453978850298735
+3,reporting bias (quiet roads under-reported),0.6338358269498782
+4,reporting bias (quiet roads under-reported),0.8314197645311521
+5,reporting bias (quiet roads under-reported),0.7078809396780981
+6,reporting bias (quiet roads under-reported),0.5863277797981256
+7,reporting bias (quiet roads under-reported),0.6404179417234775
+8,reporting bias (quiet roads under-reported),0.7358896288402366
+9,reporting bias (quiet roads under-reported),0.603641701912579
+10,reporting bias (quiet roads under-reported),0.7186347317018871
+11,reporting bias (quiet roads under-reported),0.8293992295742294
+12,reporting bias (quiet roads under-reported),0.5225361622904043
+13,reporting bias (quiet roads under-reported),0.623257175451054
+14,reporting bias (quiet roads under-reported),0.6193916971154887
+15,reporting bias (quiet roads under-reported),0.6044441061550335
+16,reporting bias (quiet roads under-reported),0.7093400949856625
+1,forecast noise sigma = 0.1,0.5220043881297718
+2,forecast noise sigma = 0.1,0.7274618720989895
+3,forecast noise sigma = 0.1,0.7513102484317621
+4,forecast noise sigma = 0.1,0.8369866838894437
+5,forecast noise sigma = 0.1,0.7467021096590026
+6,forecast noise sigma = 0.1,0.5607158177858654
+7,forecast noise sigma = 0.1,0.571893842333157
+8,forecast noise sigma = 0.1,0.6877848267304223
+9,forecast noise sigma = 0.1,0.6641734350566976
+10,forecast noise sigma = 0.1,0.7533696104373921
+11,forecast noise sigma = 0.1,0.8641198678702133
+12,forecast noise sigma = 0.1,0.574095679185949
+13,forecast noise sigma = 0.1,0.668190042714747
+14,forecast noise sigma = 0.1,0.654773533678434
+15,forecast noise sigma = 0.1,0.6187397526871329
+16,forecast noise sigma = 0.1,0.7185436500850624
+1,forecast noise sigma = 0.5,0.43852820665912595
+2,forecast noise sigma = 0.5,0.5245724513715815
+3,forecast noise sigma = 0.5,0.6928065815456823
+4,forecast noise sigma = 0.5,0.7261887433745701
+5,forecast noise sigma = 0.5,0.5885989993915011
+6,forecast noise sigma = 0.5,0.47834777039065157
+7,forecast noise sigma = 0.5,0.49626218689506857
+8,forecast noise sigma = 0.5,0.6154777591599406
+9,forecast noise sigma = 0.5,0.4944990443309932
+10,forecast noise sigma = 0.5,0.6481086537107935
+11,forecast noise sigma = 0.5,0.7065372723337588
+12,forecast noise sigma = 0.5,0.4075600465768645
+13,forecast noise sigma = 0.5,0.5346349018910264
+14,forecast noise sigma = 0.5,0.39048013621752187
+15,forecast noise sigma = 0.5,0.5705120305999162
+16,forecast noise sigma = 0.5,0.5614794118388495
+1,forecast noise sigma = 0.8,0.357834564570835
+2,forecast noise sigma = 0.8,0.4261737310057433
+3,forecast noise sigma = 0.8,0.5942740899480742
+4,forecast noise sigma = 0.8,0.590692382744924
+5,forecast noise sigma = 0.8,0.46695904946828193
+6,forecast noise sigma = 0.8,0.41050742067517604
+7,forecast noise sigma = 0.8,0.35769822114842165
+8,forecast noise sigma = 0.8,0.495158798722659
+9,forecast noise sigma = 0.8,0.29401178424950075
+10,forecast noise sigma = 0.8,0.532041439069297
+11,forecast noise sigma = 0.8,0.5846062480330538
+12,forecast noise sigma = 0.8,0.29210243547088593
+13,forecast noise sigma = 0.8,0.43256949437424297
+14,forecast noise sigma = 0.8,0.2693627887030344
+15,forecast noise sigma = 0.8,0.4448733341397521
+16,forecast noise sigma = 0.8,0.46441400105859115

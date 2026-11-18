@@ -1,0 +1,337 @@
+seed,system,recall,stratum
+1,model (logistic),0.5,small storms
+1,model (logistic),0.8,medium storms
+1,model (logistic),0.3409090909090909,large storms
+1,model (boosted trees),0.3333333333333333,small storms
+1,model (boosted trees),0.6,medium storms
+1,model (boosted trees),0.3181818181818182,large storms
+1,hotspot (count),0.5,small storms
+1,hotspot (count),1.0,medium storms
+1,hotspot (count),0.29545454545454547,large storms
+1,hotspot (recency-weighted),0.0,small storms
+1,hotspot (recency-weighted),0.8,medium storms
+1,hotspot (recency-weighted),0.25,large storms
+1,lowest elevation,0.16666666666666666,small storms
+1,lowest elevation,0.2,medium storms
+1,lowest elevation,0.09090909090909091,large storms
+1,random,0.3333333333333333,small storms
+1,random,0.2,medium storms
+1,random,0.13636363636363635,large storms
+1,ceiling (true risk; unattainable),0.5,small storms
+1,ceiling (true risk; unattainable),0.8,medium storms
+1,ceiling (true risk; unattainable),0.38636363636363635,large storms
+2,model (logistic),0.5,small storms
+2,model (logistic),0.42857142857142855,medium storms
+2,model (logistic),0.20987654320987653,large storms
+2,model (boosted trees),0.8333333333333334,small storms
+2,model (boosted trees),0.42857142857142855,medium storms
+2,model (boosted trees),0.2839506172839506,large storms
+2,hotspot (count),0.8333333333333334,small storms
+2,hotspot (count),0.35714285714285715,medium storms
+2,hotspot (count),0.32098765432098764,large storms
+2,hotspot (recency-weighted),0.6666666666666666,small storms
+2,hotspot (recency-weighted),0.21428571428571427,medium storms
+2,hotspot (recency-weighted),0.24691358024691357,large storms
+2,lowest elevation,0.16666666666666666,small storms
+2,lowest elevation,0.14285714285714285,medium storms
+2,lowest elevation,0.19753086419753085,large storms
+2,random,0.16666666666666666,small storms
+2,random,0.14285714285714285,medium storms
+2,random,0.09876543209876543,large storms
+2,ceiling (true risk; unattainable),1.0,small storms
+2,ceiling (true risk; unattainable),0.42857142857142855,medium storms
+2,ceiling (true risk; unattainable),0.32098765432098764,large storms
+3,model (logistic),1.0,small storms
+3,model (logistic),1.0,medium storms
+3,model (logistic),0.359375,large storms
+3,model (boosted trees),0.5,small storms
+3,model (boosted trees),0.8,medium storms
+3,model (boosted trees),0.34375,large storms
+3,hotspot (count),1.0,small storms
+3,hotspot (count),1.0,medium storms
+3,hotspot (count),0.390625,large storms
+3,hotspot (recency-weighted),0.5,small storms
+3,hotspot (recency-weighted),0.4,medium storms
+3,hotspot (recency-weighted),0.359375,large storms
+3,lowest elevation,0.5,small storms
+3,lowest elevation,0.2,medium storms
+3,lowest elevation,0.203125,large storms
+3,random,0.0,small storms
+3,random,0.0,medium storms
+3,random,0.125,large storms
+3,ceiling (true risk; unattainable),1.0,small storms
+3,ceiling (true risk; unattainable),0.8,medium storms
+3,ceiling (true risk; unattainable),0.421875,large storms
+4,model (logistic),,small storms
+4,model (logistic),0.7692307692307693,medium storms
+4,model (logistic),0.2761904761904762,large storms
+4,model (boosted trees),,small storms
+4,model (boosted trees),0.6153846153846154,medium storms
+4,model (boosted trees),0.2571428571428571,large storms
+4,hotspot (count),,small storms
+4,hotspot (count),0.7692307692307693,medium storms
+4,hotspot (count),0.2857142857142857,large storms
+4,hotspot (recency-weighted),,small storms
+4,hotspot (recency-weighted),0.6923076923076923,medium storms
+4,hotspot (recency-weighted),0.2571428571428571,large storms
+4,lowest elevation,,small storms
+4,lowest elevation,0.5384615384615384,medium storms
+4,lowest elevation,0.1523809523809524,large storms
+4,random,,small storms
+4,random,0.07692307692307693,medium storms
+4,random,0.1523809523809524,large storms
+4,ceiling (true risk; unattainable),,small storms
+4,ceiling (true risk; unattainable),0.7692307692307693,medium storms
+4,ceiling (true risk; unattainable),0.2857142857142857,large storms
+5,model (logistic),1.0,small storms
+5,model (logistic),0.25,medium storms
+5,model (logistic),0.3333333333333333,large storms
+5,model (boosted trees),0.0,small storms
+5,model (boosted trees),0.0,medium storms
+5,model (boosted trees),0.30303030303030304,large storms
+5,hotspot (count),1.0,small storms
+5,hotspot (count),0.25,medium storms
+5,hotspot (count),0.3333333333333333,large storms
+5,hotspot (recency-weighted),0.0,small storms
+5,hotspot (recency-weighted),0.125,medium storms
+5,hotspot (recency-weighted),0.3333333333333333,large storms
+5,lowest elevation,1.0,small storms
+5,lowest elevation,0.25,medium storms
+5,lowest elevation,0.24242424242424243,large storms
+5,random,0.0,small storms
+5,random,0.0,medium storms
+5,random,0.06060606060606061,large storms
+5,ceiling (true risk; unattainable),1.0,small storms
+5,ceiling (true risk; unattainable),0.5,medium storms
+5,ceiling (true risk; unattainable),0.42424242424242425,large storms
+6,model (logistic),0.8888888888888888,small storms
+6,model (logistic),0.6363636363636364,medium storms
+6,model (logistic),0.475,large storms
+6,model (boosted trees),0.6666666666666666,small storms
+6,model (boosted trees),0.7272727272727273,medium storms
+6,model (boosted trees),0.45,large storms
+6,hotspot (count),0.6666666666666666,small storms
+6,hotspot (count),0.7272727272727273,medium storms
+6,hotspot (count),0.475,large storms
+6,hotspot (recency-weighted),0.6666666666666666,small storms
+6,hotspot (recency-weighted),0.8181818181818182,medium storms
+6,hotspot (recency-weighted),0.475,large storms
+6,lowest elevation,0.6666666666666666,small storms
+6,lowest elevation,0.36363636363636365,medium storms
+6,lowest elevation,0.25,large storms
+6,random,0.1111111111111111,small storms
+6,random,0.09090909090909091,medium storms
+6,random,0.2,large storms
+6,ceiling (true risk; unattainable),0.8888888888888888,small storms
+6,ceiling (true risk; unattainable),0.7272727272727273,medium storms
+6,ceiling (true risk; unattainable),0.5,large storms
+7,model (logistic),0.75,small storms
+7,model (logistic),0.42857142857142855,medium storms
+7,model (logistic),0.2962962962962963,large storms
+7,model (boosted trees),0.5,small storms
+7,model (boosted trees),0.14285714285714285,medium storms
+7,model (boosted trees),0.2345679012345679,large storms
+7,hotspot (count),0.5,small storms
+7,hotspot (count),0.2857142857142857,medium storms
+7,hotspot (count),0.2716049382716049,large storms
+7,hotspot (recency-weighted),0.25,small storms
+7,hotspot (recency-weighted),0.14285714285714285,medium storms
+7,hotspot (recency-weighted),0.2716049382716049,large storms
+7,lowest elevation,0.25,small storms
+7,lowest elevation,0.2857142857142857,medium storms
+7,lowest elevation,0.12345679012345678,large storms
+7,random,0.0,small storms
+7,random,0.42857142857142855,medium storms
+7,random,0.06172839506172839,large storms
+7,ceiling (true risk; unattainable),0.75,small storms
+7,ceiling (true risk; unattainable),0.42857142857142855,medium storms
+7,ceiling (true risk; unattainable),0.30864197530864196,large storms
+8,model (logistic),0.5,small storms
+8,model (logistic),0.16666666666666666,medium storms
+8,model (logistic),0.1956521739130435,large storms
+8,model (boosted trees),0.5,small storms
+8,model (boosted trees),0.3333333333333333,medium storms
+8,model (boosted trees),0.1956521739130435,large storms
+8,hotspot (count),0.5,small storms
+8,hotspot (count),0.16666666666666666,medium storms
+8,hotspot (count),0.17391304347826086,large storms
+8,hotspot (recency-weighted),0.0,small storms
+8,hotspot (recency-weighted),0.16666666666666666,medium storms
+8,hotspot (recency-weighted),0.15217391304347827,large storms
+8,lowest elevation,0.5,small storms
+8,lowest elevation,0.16666666666666666,medium storms
+8,lowest elevation,0.13043478260869565,large storms
+8,random,0.0,small storms
+8,random,0.0,medium storms
+8,random,0.13043478260869565,large storms
+8,ceiling (true risk; unattainable),0.5,small storms
+8,ceiling (true risk; unattainable),0.3333333333333333,medium storms
+8,ceiling (true risk; unattainable),0.20652173913043478,large storms
+9,model (logistic),0.8333333333333334,small storms
+9,model (logistic),0.4166666666666667,medium storms
+9,model (logistic),0.21176470588235294,large storms
+9,model (boosted trees),0.5,small storms
+9,model (boosted trees),0.4166666666666667,medium storms
+9,model (boosted trees),0.23529411764705882,large storms
+9,hotspot (count),0.8333333333333334,small storms
+9,hotspot (count),0.75,medium storms
+9,hotspot (count),0.23529411764705882,large storms
+9,hotspot (recency-weighted),0.3333333333333333,small storms
+9,hotspot (recency-weighted),0.6666666666666666,medium storms
+9,hotspot (recency-weighted),0.21176470588235294,large storms
+9,lowest elevation,0.3333333333333333,small storms
+9,lowest elevation,0.3333333333333333,medium storms
+9,lowest elevation,0.21176470588235294,large storms
+9,random,0.0,small storms
+9,random,0.16666666666666666,medium storms
+9,random,0.1411764705882353,large storms
+9,ceiling (true risk; unattainable),0.6666666666666666,small storms
+9,ceiling (true risk; unattainable),0.75,medium storms
+9,ceiling (true risk; unattainable),0.24705882352941178,large storms
+10,model (logistic),0.25,small storms
+10,model (logistic),0.46153846153846156,medium storms
+10,model (logistic),0.34545454545454546,large storms
+10,model (boosted trees),0.5,small storms
+10,model (boosted trees),0.5384615384615384,medium storms
+10,model (boosted trees),0.3090909090909091,large storms
+10,hotspot (count),0.5,small storms
+10,hotspot (count),0.46153846153846156,medium storms
+10,hotspot (count),0.34545454545454546,large storms
+10,hotspot (recency-weighted),0.5,small storms
+10,hotspot (recency-weighted),0.5384615384615384,medium storms
+10,hotspot (recency-weighted),0.2727272727272727,large storms
+10,lowest elevation,0.25,small storms
+10,lowest elevation,0.23076923076923078,medium storms
+10,lowest elevation,0.16363636363636364,large storms
+10,random,0.0,small storms
+10,random,0.07692307692307693,medium storms
+10,random,0.16363636363636364,large storms
+10,ceiling (true risk; unattainable),0.5,small storms
+10,ceiling (true risk; unattainable),0.46153846153846156,medium storms
+10,ceiling (true risk; unattainable),0.36363636363636365,large storms
+11,model (logistic),0.75,small storms
+11,model (logistic),0.6,medium storms
+11,model (logistic),0.32456140350877194,large storms
+11,model (boosted trees),0.25,small storms
+11,model (boosted trees),0.55,medium storms
+11,model (boosted trees),0.2543859649122807,large storms
+11,hotspot (count),0.75,small storms
+11,hotspot (count),0.6,medium storms
+11,hotspot (count),0.2982456140350877,large storms
+11,hotspot (recency-weighted),0.75,small storms
+11,hotspot (recency-weighted),0.45,medium storms
+11,hotspot (recency-weighted),0.2982456140350877,large storms
+11,lowest elevation,0.0,small storms
+11,lowest elevation,0.15,medium storms
+11,lowest elevation,0.18421052631578946,large storms
+11,random,0.0,small storms
+11,random,0.15,medium storms
+11,random,0.08771929824561403,large storms
+11,ceiling (true risk; unattainable),0.75,small storms
+11,ceiling (true risk; unattainable),0.65,medium storms
+11,ceiling (true risk; unattainable),0.32456140350877194,large storms
+12,model (logistic),0.625,small storms
+12,model (logistic),0.4666666666666667,medium storms
+12,model (logistic),0.35064935064935066,large storms
+12,model (boosted trees),0.375,small storms
+12,model (boosted trees),0.6666666666666666,medium storms
+12,model (boosted trees),0.3116883116883117,large storms
+12,hotspot (count),0.5,small storms
+12,hotspot (count),0.6,medium storms
+12,hotspot (count),0.33766233766233766,large storms
+12,hotspot (recency-weighted),0.25,small storms
+12,hotspot (recency-weighted),0.6,medium storms
+12,hotspot (recency-weighted),0.2987012987012987,large storms
+12,lowest elevation,0.25,small storms
+12,lowest elevation,0.5333333333333333,medium storms
+12,lowest elevation,0.3116883116883117,large storms
+12,random,0.0,small storms
+12,random,0.13333333333333333,medium storms
+12,random,0.2077922077922078,large storms
+12,ceiling (true risk; unattainable),0.5,small storms
+12,ceiling (true risk; unattainable),0.5333333333333333,medium storms
+12,ceiling (true risk; unattainable),0.35064935064935066,large storms
+13,model (logistic),1.0,small storms
+13,model (logistic),0.35714285714285715,medium storms
+13,model (logistic),0.1875,large storms
+13,model (boosted trees),0.0,small storms
+13,model (boosted trees),0.35714285714285715,medium storms
+13,model (boosted trees),0.3125,large storms
+13,hotspot (count),1.0,small storms
+13,hotspot (count),0.35714285714285715,medium storms
+13,hotspot (count),0.28125,large storms
+13,hotspot (recency-weighted),0.3333333333333333,small storms
+13,hotspot (recency-weighted),0.14285714285714285,medium storms
+13,hotspot (recency-weighted),0.15625,large storms
+13,lowest elevation,0.3333333333333333,small storms
+13,lowest elevation,0.21428571428571427,medium storms
+13,lowest elevation,0.15625,large storms
+13,random,0.0,small storms
+13,random,0.35714285714285715,medium storms
+13,random,0.28125,large storms
+13,ceiling (true risk; unattainable),0.3333333333333333,small storms
+13,ceiling (true risk; unattainable),0.42857142857142855,medium storms
+13,ceiling (true risk; unattainable),0.40625,large storms
+14,model (logistic),0.6,small storms
+14,model (logistic),0.42857142857142855,medium storms
+14,model (logistic),0.26666666666666666,large storms
+14,model (boosted trees),0.6,small storms
+14,model (boosted trees),0.42857142857142855,medium storms
+14,model (boosted trees),0.15,large storms
+14,hotspot (count),0.6,small storms
+14,hotspot (count),0.42857142857142855,medium storms
+14,hotspot (count),0.2833333333333333,large storms
+14,hotspot (recency-weighted),0.4,small storms
+14,hotspot (recency-weighted),0.2857142857142857,medium storms
+14,hotspot (recency-weighted),0.2,large storms
+14,lowest elevation,0.4,small storms
+14,lowest elevation,0.2857142857142857,medium storms
+14,lowest elevation,0.23333333333333334,large storms
+14,random,0.0,small storms
+14,random,0.0,medium storms
+14,random,0.11666666666666667,large storms
+14,ceiling (true risk; unattainable),0.8,small storms
+14,ceiling (true risk; unattainable),0.42857142857142855,medium storms
+14,ceiling (true risk; unattainable),0.3,large storms
+15,model (logistic),0.25,small storms
+15,model (logistic),0.6666666666666666,medium storms
+15,model (logistic),0.20408163265306123,large storms
+15,model (boosted trees),0.75,small storms
+15,model (boosted trees),0.5555555555555556,medium storms
+15,model (boosted trees),0.24489795918367346,large storms
+15,hotspot (count),0.75,small storms
+15,hotspot (count),0.5555555555555556,medium storms
+15,hotspot (count),0.24489795918367346,large storms
+15,hotspot (recency-weighted),0.75,small storms
+15,hotspot (recency-weighted),0.3333333333333333,medium storms
+15,hotspot (recency-weighted),0.22448979591836735,large storms
+15,lowest elevation,1.0,small storms
+15,lowest elevation,0.3333333333333333,medium storms
+15,lowest elevation,0.24489795918367346,large storms
+15,random,0.25,small storms
+15,random,0.1111111111111111,medium storms
+15,random,0.22448979591836735,large storms
+15,ceiling (true risk; unattainable),0.75,small storms
+15,ceiling (true risk; unattainable),0.4444444444444444,medium storms
+15,ceiling (true risk; unattainable),0.32653061224489793,large storms
+16,model (logistic),1.0,small storms
+16,model (logistic),0.2857142857142857,medium storms
+16,model (logistic),0.4523809523809524,large storms
+16,model (boosted trees),1.0,small storms
+16,model (boosted trees),0.2857142857142857,medium storms
+16,model (boosted trees),0.42857142857142855,large storms
+16,hotspot (count),1.0,small storms
+16,hotspot (count),0.2857142857142857,medium storms
+16,hotspot (count),0.42857142857142855,large storms
+16,hotspot (recency-weighted),0.5,small storms
+16,hotspot (recency-weighted),0.42857142857142855,medium storms
+16,hotspot (recency-weighted),0.2857142857142857,large storms
+16,lowest elevation,0.5,small storms
+16,lowest elevation,0.0,medium storms
+16,lowest elevation,0.19047619047619047,large storms
+16,random,0.0,small storms
+16,random,0.14285714285714285,medium storms
+16,random,0.09523809523809523,large storms
+16,ceiling (true risk; unattainable),1.0,small storms
+16,ceiling (true risk; unattainable),0.5714285714285714,medium storms
+16,ceiling (true risk; unattainable),0.4523809523809524,large storms

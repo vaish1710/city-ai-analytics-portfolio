@@ -1,0 +1,45 @@
+scenario,model,vs,diff,se,wins
+"drift (40% of segments change), window = 12",logistic,count,0.027,0.01,13
+"drift (40% of segments change), window = 12",logistic,recency,-0.012,0.009,7
+"drift (40% of segments change), window = 12",gbm,count,0.023,0.01,10
+"drift (40% of segments change), window = 12",gbm,recency,-0.016,0.009,4
+"drift (40% of segments change), window = all",logistic,count,-0.012,0.009,5
+"drift (40% of segments change), window = all",logistic,recency,-0.0,0.01,9
+"drift (40% of segments change), window = all",gbm,count,-0.04,0.007,0
+"drift (40% of segments change), window = all",gbm,recency,-0.028,0.005,0
+forecast noise sigma = 0.1,logistic,count,-0.008,0.009,6
+forecast noise sigma = 0.1,logistic,recency,0.055,0.012,13
+forecast noise sigma = 0.1,gbm,count,-0.033,0.007,1
+forecast noise sigma = 0.1,gbm,recency,0.03,0.013,10
+forecast noise sigma = 0.5,logistic,count,-0.015,0.011,7
+forecast noise sigma = 0.5,logistic,recency,0.049,0.011,13
+forecast noise sigma = 0.5,gbm,count,-0.035,0.01,3
+forecast noise sigma = 0.5,gbm,recency,0.029,0.013,9
+forecast noise sigma = 0.8,logistic,count,-0.016,0.012,7
+forecast noise sigma = 0.8,logistic,recency,0.048,0.012,12
+forecast noise sigma = 0.8,gbm,count,-0.039,0.011,3
+forecast noise sigma = 0.8,gbm,recency,0.025,0.014,9
+history window = 12 storms,logistic,count,0.058,0.01,13
+history window = 12 storms,logistic,recency,0.025,0.011,9
+history window = 12 storms,gbm,count,0.044,0.014,11
+history window = 12 storms,gbm,recency,0.011,0.016,8
+history window = 24 storms,logistic,count,0.026,0.009,12
+history window = 24 storms,logistic,recency,0.024,0.009,10
+history window = 24 storms,gbm,count,0.014,0.015,12
+history window = 24 storms,gbm,recency,0.013,0.015,9
+history window = 3 storms,logistic,count,0.121,0.017,15
+history window = 3 storms,logistic,recency,0.024,0.008,10
+history window = 3 storms,gbm,count,0.128,0.018,16
+history window = 3 storms,gbm,recency,0.031,0.014,9
+history window = 6 storms,logistic,count,0.088,0.014,15
+history window = 6 storms,logistic,recency,0.021,0.012,10
+history window = 6 storms,gbm,count,0.089,0.017,14
+history window = 6 storms,gbm,recency,0.022,0.015,8
+history window = all storms,logistic,count,-0.012,0.01,6
+history window = all storms,logistic,recency,0.052,0.012,12
+history window = all storms,gbm,count,-0.037,0.009,1
+history window = all storms,gbm,recency,0.026,0.014,9
+reporting bias (quiet roads under-reported),logistic,count,-0.011,0.006,3
+reporting bias (quiet roads under-reported),logistic,recency,0.044,0.014,12
+reporting bias (quiet roads under-reported),gbm,count,-0.037,0.007,1
+reporting bias (quiet roads under-reported),gbm,recency,0.017,0.013,10

@@ -1,0 +1,117 @@
+<title>Flood Crew Dispatch Demo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap">
+<style>
+/* Layout: control strip, three recall tiles, one storm walk-through table, one history chart, short findings. */
+:root{--bg:#f6f8f9;--panel:#fff;--fg:#14232b;--muted:#5b6c75;--line:#dbe3e7;--model:#17708c;--hot:#c8424f;--elev:#6b7d8a;--ok:#2d8a5b;--miss:#b4741a;--font:"Inter",system-ui,sans-serif;--head:"Space Grotesk","Inter",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a1f;--panel:#16252c;--fg:#e6eef1;--muted:#9bb0ba;--line:#27393f;--model:#52b6d4;--hot:#ef7b86;--elev:#93a6b2;--ok:#5cc28f;--miss:#e0a64f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1a1f;--panel:#16252c;--fg:#e6eef1;--muted:#9bb0ba;--line:#27393f;--model:#52b6d4;--hot:#ef7b86;--elev:#93a6b2;--ok:#5cc28f;--miss:#e0a64f;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.5;padding-block:24px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+h1{font-family:var(--head);font-size:1.9rem;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-family:var(--head);font-size:1.1rem;margin:0 0 8px}
+p{margin:0}.muted{color:var(--muted)}
+.tag{display:inline-block;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--miss);color:var(--miss);padding:2px 8px;border-radius:4px;margin-bottom:8px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px;min-width:0}
+.controls{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:end}
+.ctl{display:flex;flex-direction:column;gap:6px;min-width:0}
+.ctl label,.ctl .lab{font-size:.8rem;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.seg{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.seg button{font:inherit;background:var(--panel);color:var(--fg);border:0;padding:7px 14px;cursor:pointer}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--model);color:var(--bg);font-weight:600}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--model);outline-offset:2px}
+input[type=range]{width:200px;max-width:100%}
+select{font:inherit;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 8px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.tile .n{font-family:var(--head);font-size:2rem;font-variant-numeric:tabular-nums}
+.bar{height:8px;background:var(--line);border-radius:4px;overflow:hidden;margin:6px 0}
+.bar i{display:block;height:100%}
+.table-scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.pill{padding:1px 8px;border-radius:10px;font-size:.8rem;border:1px solid}
+.pill.ok{color:var(--ok);border-color:var(--ok)}.pill.no{color:var(--muted);border-color:var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:10px}
+.nav button{font:inherit;background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:5px 12px;cursor:pointer}
+svg text{fill:var(--muted);font-size:11px;font-family:var(--font)}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.85rem}.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;background:var(--c)}
+</style>
+<div class="wrap">
+<header>
+ <span class="tag">Synthetic city · not Chesapeake data</span>
+ <h1>Which roads should crews check first?</h1>
+ <p class="muted" style="margin-top:8px">A simulated city of 60 road segments. After each held-out storm, crews can check the top K segments. Recall is the share of that storm's reported flood incidents sitting in the segments they checked.</p>
+</header>
+
+<section class="panel controls" aria-label="Controls">
+ <div class="ctl"><span class="lab" id="hl">Storms of history available</span>
+  <div class="seg" role="group" aria-labelledby="hl" id="hist"></div></div>
+ <div class="ctl"><label for="k">Segments checked per storm (K): <b id="kv">8</b></label><input type="range" id="k" min="2" max="20" value="8"></div>
+</section>
+
+<section class="tiles" id="tiles" aria-live="polite"></section>
+
+<section class="panel">
+ <h2>Walk through one storm</h2>
+ <div class="row">
+  <div class="ctl"><label for="sys">Ranking used</label><select id="sys"><option value="model">Model</option><option value="hotspot">Hotspot (past flood count)</option><option value="elevation">Lowest elevation</option></select></div>
+  <div class="nav"><button id="prev" aria-label="Previous storm">◀</button> <button id="next" aria-label="Next storm">▶</button></div>
+  <div id="sinfo" class="muted"></div>
+ </div>
+ <div class="table-scroll"><table><thead><tr><th>Rank</th><th>Segment</th><th>Basin</th><th>Elev (ft)</th><th>Tidal</th><th>Outcome</th></tr></thead><tbody id="tb"></tbody></table></div>
+ <p id="missed" class="muted" style="margin-top:10px"></p>
+</section>
+
+<section class="panel">
+ <h2>When does the model beat the hotspot list?</h2>
+ <p class="muted" style="margin-bottom:8px">Mean recall at K=8 across 16 simulated cities per history length, bars show ±1 standard error. Same model and baselines as above.</p>
+ <div class="legend"><span style="--c:var(--model)">Model</span><span style="--c:var(--hot)">Hotspot count</span><span style="--c:var(--elev)">Lowest elevation</span></div>
+ <div class="table-scroll"><svg id="chart" viewBox="0 0 640 280" width="100%" role="img" aria-label="Recall by history length for model, hotspot and elevation"></svg></div>
+</section>
+
+<section class="panel">
+ <h2>What this shows</h2>
+ <ul>
+  <li>With 24 storms of records or fewer, the model beats a hotspot list by about 3 to 12 recall points (12 at 3 storms, 3 at 24). It can use elevation and basin features when the flood history is thin.</li>
+  <li>With the full history, a plain count of past floods ties the model (model minus hotspot is −0.012, about one standard error). Do not expect a model to beat that list on its own.</li>
+  <li>Forecast quality changes how many crews to call out for a storm. It barely changes which segments to rank, so forecast noise did not move these results.</li>
+  <li>Everything here is simulated. A real pilot needs Public Works flood reports and closures, then the same held-out-storm test.</li>
+ </ul>
+</section>
+</div>
+<script>
+const D=__DATA__, SWEEP=__SWEEP__;
+const LAB={model:"Model",hotspot:"Hotspot",elevation:"Lowest elevation"},COL={model:"var(--model)",hotspot:"var(--hot)",elevation:"var(--elev)"};
+let hist="12",K=8,si=0;
+const $=id=>document.getElementById(id);
+function rank(s,key){const sc=s[key];return sc.map((v,i)=>i).sort((a,b)=>sc[b]-sc[a]||a-b);}
+function recall(c,key){let h=0,t=0;for(const s of c.storms){const o=rank(s,key).slice(0,K);t+=s.incident.reduce((a,b)=>a+b,0);for(const i of o)h+=s.incident[i];}return h/t;}
+function histBtns(){const h=$("hist");h.innerHTML="";for(const [v,l] of [["3","3"],["12","12"],["all","All"]]){const b=document.createElement("button");b.textContent=l;b.setAttribute("aria-pressed",v===hist);b.onclick=()=>{hist=v;si=0;render()};h.appendChild(b)}}
+function render(){
+ histBtns();const c=D.cities[hist];$("kv").textContent=K;
+ $("tiles").innerHTML=["model","hotspot","elevation"].map(k=>{const r=recall(c,k);return `<div class="panel tile"><div class="muted">${LAB[k]}</div><div class="n">${(r*100).toFixed(0)}%</div><div class="bar"><i style="width:${r*100}%;background:${COL[k]}"></i></div><div class="muted" style="font-size:.85rem">of reported incidents caught, ${c.storms.length} held-out storms</div></div>`}).join("");
+ const s=c.storms[si],key=$("sys").value,o=rank(s,key).slice(0,K),inc=s.incident.reduce((a,b)=>a+b,0);
+ $("sinfo").textContent=`Storm ${si+1} of ${c.storms.length} · forecast rain index ${s.forecast_in} · ${inc} reported incident${inc===1?"":"s"}`;
+ $("tb").innerHTML=o.map((i,r)=>{const g=c.segments[i],hit=s.incident[i];return `<tr><td>${r+1}</td><td>S${g.id}</td><td>${g.basin}</td><td>${g.elev_ft}</td><td>${g.tidal?"yes":"no"}</td><td><span class="pill ${hit?"ok":"no"}">${hit?"incident reported":"quiet"}</span></td></tr>`}).join("");
+ const caught=o.filter(i=>s.incident[i]).length,miss=s.incident.map((v,i)=>v&&!o.includes(i)?"S"+c.segments[i].id:null).filter(Boolean);
+ $("missed").textContent=`Caught ${caught} of ${inc}.`+(miss.length?` Missed: ${miss.join(", ")}.`:"");
+}
+$("k").oninput=e=>{K=+e.target.value;render()};$("sys").onchange=render;
+$("prev").onclick=()=>{const n=D.cities[hist].storms.length;si=(si-1+n)%n;render()};
+$("next").onclick=()=>{const n=D.cities[hist].storms.length;si=(si+1)%n;render()};
+function chart(){
+ const W=640,H=280,L=44,R=12,T=14,B=44,xs=["3","6","12","24","all"],ys=[0.1,0.2,0.3,0.4],ymax=0.45;
+ const X=i=>L+(W-L-R)*(i+0.5)/xs.length,Y=v=>T+(H-T-B)*(1-v/ymax);let s="";
+ for(const y of ys)s+=`<line x1="${L}" x2="${W-R}" y1="${Y(y)}" y2="${Y(y)}" stroke="var(--line)"/><text x="${L-6}" y="${Y(y)+4}" text-anchor="end">${y.toFixed(1)}</text>`;
+ xs.forEach((x,i)=>s+=`<text x="${X(i)}" y="${H-B+18}" text-anchor="middle">${x==="all"?"all":x+" storms"}</text>`);
+ s+=`<text x="${(L+W-R)/2}" y="${H-6}" text-anchor="middle">History available</text><text x="12" y="${(T+H-B)/2}" transform="rotate(-90 12 ${(T+H-B)/2})" text-anchor="middle">Recall at K=8</text>`;
+ for(const k of ["elevation","hotspot","model"]){const p=SWEEP[k];
+  s+=`<polyline fill="none" stroke="${COL[k]}" stroke-width="2.5" points="${xs.map((x,i)=>X(i)+","+Y(p[x][0])).join(" ")}"/>`;
+  xs.forEach((x,i)=>{const [m,e]=p[x];s+=`<line x1="${X(i)}" x2="${X(i)}" y1="${Y(m-e)}" y2="${Y(m+e)}" stroke="${COL[k]}"/><circle cx="${X(i)}" cy="${Y(m)}" r="4" fill="${COL[k]}"/>`})}
+ $("chart").innerHTML=s;
+}
+chart();render();
+</script>

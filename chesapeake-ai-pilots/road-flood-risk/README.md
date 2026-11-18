@@ -43,3 +43,19 @@ forecast peak/total rain, forecast tide), segments (id, elevation, distance to d
 - **Use forecast values available before each storm, not observed rainfall.** Observed rain makes results look far better than the tool could do.
 - The run prints what it dropped, warns on too few storms/incidents, and gives a bootstrap interval for "model minus hotspot baseline". If the interval spans 0, there is no demonstrated gain.
 - The loader is tested by exporting the synthetic data to files and checking it gives identical results through the real-data path.
+
+## In-depth study (simulated city)
+
+`python src/study.py` runs 11 scenarios x 16 simulated cities (`outputs/study/`), `python src/demo_data.py` rebuilds the demo data and `outputs/study/history_sweep.png`. `demo/index.html` is the interactive demo.
+
+Recall of reported incidents at K=8 checked segments, model (logistic) vs hotspot count with the same history:
+
+| History | Model | Hotspot | Diff |
+|---|---|---|---|
+| 3 storms | 0.319 | 0.198 | +0.121 |
+| 6 | 0.316 | 0.228 | +0.088 |
+| 12 | 0.320 | 0.262 | +0.058 |
+| 24 | 0.320 | 0.294 | +0.026 |
+| all | 0.347 | 0.359 | -0.012 |
+
+Findings: the model beats the hotspot list when history is short and ties it (slightly behind, within about one standard error) with full history, under drift, and under reporting bias. Boosted trees did not beat logistic. Forecast noise barely moves within-storm ranking; it matters for how many crews to call out. The model was not tuned. All of this is simulated; a real pilot needs Public Works flood reports and a forecast archive (see `src/real_data.py`).
