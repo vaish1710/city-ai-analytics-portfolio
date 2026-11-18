@@ -1,0 +1,41 @@
+text,label,suggested,confidence,route
+playground equipment broken in front of my house. Thanks.,parks_other,parks_other,0.962,auto
+"Hi, missed garbage collection . It has been like this for days.",waste,waste,0.978,auto
+Reporting a problem. water across the road . Thanks.,waste,parks_other,0.302,person
+Please help: abandoned vehicle by the shoppnig center. Thanks.,parks_other,parks_other,0.937,person
+"Hi, stop sign knocked down in front of my house. Dangerous for kdis.",traffic,traffic,0.928,person
+"Again, storm drain is clogged on Cedar Rd. It has been like this for days.",stormwater,stormwater,0.793,person
+"Hi, abandoned vehicle on Cedar Rd. It has been like this for days.",parks_other,parks_other,0.933,person
+tree limb fell in the park in front of my house. Dangerous for kids.,parks_other,parks_other,0.867,person
+Please help: overgrown lot on Main St. Dangerous for kids.,parks_other,parks_other,0.964,auto
+garbage truck skipped our street .,waste,waste,0.978,auto
+Reporting a problem. sinkhole forming in the road in front of my house. It has been like this for days.,streets,streets,0.918,person
+"Hi, water across the road at the corner of Elm and 5th. Thanks.",waste,parks_other,0.339,person
+damaged pavement near the school. Dangerous for kids.,streets,streets,0.966,auto
+Reporting a problem. ditch behind my house is full in front of my house. Please fix soon.,stormwater,stormwater,0.959,auto
+damaged pavement . Dangerous for kids.,streets,streets,0.97,auto
+"Again, light out near the school crossing on Cedar Rd. Dangerous for kids.",waste,traffic,0.458,person
+"Again, trash piled by the storm drain on Main St.",waste,parks_other,0.273,person
+Reporting a problem. branch blocking the road near the school. Please fix soon.,streets,streets,0.357,person
+standing water that will not drain by the shopping center. Dangerous for kids.,stormwater,stormwater,0.96,auto
+Reporting a problem. branch blocking the road on Cedar Rd.,waste,streets,0.401,person
+Reporting a problem. deep hole in the street at the corner of Elm and 5th. Thanks.,streets,streets,0.917,person
+"Hi, please send someone to look at this . Dangerous for kids.",waste,waste,0.343,person
+trash piled by the storm drain by the shopping center. Thanks.,parks_other,waste,0.281,person
+recycling bin not emptied . Thanks.,waste,waste,0.991,auto
+Reporting a problem. garbage truck skipped our street in front of my house. Dangerous for kids.,waste,waste,0.949,person
+Reporting a problem. abandoned vehicle at the corner of Elm and 5th. Please fix soon.,parks_other,parks_other,0.963,auto
+Please help: left turn arrow broken . Please fix soon.,traffic,traffic,0.959,auto
+abandoned vehicle on Main St. Please fix soon.,parks_other,parks_other,0.77,person
+"Again, overgrown lot at the corner of Elm and 5th. Please fix soon.",streets,parks_other,0.968,auto
+Please help: water across the road in front of my house. It has been like this for days.,stormwater,parks_other,0.322,person
+"Hi, signal flashing red all day in front of my house. Dangerous for kids.",stormwater,traffic,0.899,person
+"Again, garbage truck skipped our street by the shopping center. Please fix soon.",waste,waste,0.917,person
+"Hi, missed garbage collection on Main St.",waste,waste,0.992,auto
+problem in my neighborhood on Cedar Rd. Thanks.,streets,waste,0.47,person
+light out near the school crossing in front of my house. It has been like this for days.,waste,parks_other,0.466,person
+Please help: please send someone to look at this near the school. It has been like this for days.,parks_other,traffic,0.361,person
+"Hi, recycling bin not emptied at the corner of Elm and 5th. Please fix soon.",waste,waste,0.937,person
+"Again, please send someone to look at this by the shopping center. Dangerous for kids.",streets,traffic,0.348,person
+trash was not picked up on Main St. Dangerous for kids.,waste,waste,0.961,auto
+Please help: abanodned vehicle on Main St. Thanks.,parks_other,traffic,0.372,person

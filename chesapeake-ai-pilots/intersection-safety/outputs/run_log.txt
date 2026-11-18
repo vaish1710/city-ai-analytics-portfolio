@@ -1,0 +1,23 @@
+300 simulated intersections x 30 simulated cities. Flag the top 10% on 2019-21 crashes; judge on 2022-23 crashes.
+
+                         future_share_mean  future_share_min  future_share_max  true_top10_found
+ranking                                                                                         
+empirical Bayes                      0.283             0.219             0.340             0.709
+raw crash count                      0.280             0.221             0.341             0.694
+model only (no history)              0.222             0.171             0.268             0.431
+crashes per vehicle                  0.193             0.144             0.244             0.344
+  (a random 10% of sites would capture 0.10 of future crashes)
+
+Paired comparison (same simulated cities):
+  1 yr history: EB minus raw count = +0.0124 (std error 0.0032); EB better in 26/30 cities
+  3 yr history: EB minus raw count = +0.0032 (std error 0.0020); EB better in 18/30 cities
+
+With only 1 year of history, share of future crashes found:
+ranking
+empirical Bayes            0.257
+raw crash count            0.245
+model only (no history)    0.219
+crashes per vehicle        0.161
+
+Regression to the mean: the 10% of sites with the most 2019-21 crashes averaged 4.60 crashes/yr then and 3.90/yr in 2022-23,
+with nothing done to them. Treating that drop as the effect of a fix would be a mistake.

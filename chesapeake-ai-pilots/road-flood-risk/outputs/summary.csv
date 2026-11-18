@@ -1,0 +1,11 @@
+history_storms,system,recall_mean,recall_min,recall_max,false_alerts
+80,ceiling (knows true risk; not achievable),0.376,0.303,0.478,7.208
+80,hotspot history,0.357,0.22,0.522,7.288
+80,lowest elevation,0.236,0.182,0.357,7.504
+80,model (boosted trees),0.333,0.186,0.5,7.346
+80,model (logistic),0.363,0.273,0.435,7.254
+200,ceiling (knows true risk; not achievable),0.339,0.28,0.425,7.11
+200,hotspot history,0.328,0.226,0.438,7.14
+200,lowest elevation,0.204,0.145,0.267,7.453
+200,model (boosted trees),0.3,0.22,0.352,7.198
+200,model (logistic),0.327,0.244,0.425,7.143

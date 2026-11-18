@@ -1,0 +1,8 @@
+{
+  "synthetic_data": true,
+  "mode": "ml",
+  "budget": 25000000,
+  "rows": 4000,
+  "cv_mean_r2": 0.6612024081633288,
+  "cv_mean_mae_usd": 8253.053650048812
+}

@@ -1,0 +1,5 @@
+{
+  "_note": "Replace the right-hand values with YOUR column names. These are placeholders, not the real VDOT field names.",
+  "crashes": {"site": "INTERSECTION_ID", "date": "CRASH_DATE", "severity": "SEVERITY", "severity_keep": null},
+  "sites":   {"site": "INTERSECTION_ID", "aadt": "ENTERING_ADT", "signal": "SIGNALIZED", "legs": "NUM_LEGS", "speed": "SPEED_LIMIT"}
+}

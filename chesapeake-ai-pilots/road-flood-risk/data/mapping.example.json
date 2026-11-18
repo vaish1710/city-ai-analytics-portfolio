@@ -1,0 +1,6 @@
+{
+  "_note": "Replace the right-hand values with YOUR column names (placeholders). tide_fc and tidal are optional. incidents.csv has one row per REPORTED flooding incident: which storm, which segment.",
+  "storms":    {"storm": "STORM_ID", "start": "START_TIME", "peak_fc": "FCST_PEAK_RAIN_IN_HR", "total_fc": "FCST_TOTAL_RAIN_IN", "tide_fc": "FCST_TIDE_FT"},
+  "segments":  {"segment": "SEGMENT_ID", "elev_ft": "MEAN_ELEV_FT", "drain_dist_ft": "DIST_TO_DRAIN_FT", "tidal": "TIDAL"},
+  "incidents": {"storm": "STORM_ID", "segment": "SEGMENT_ID"}
+}

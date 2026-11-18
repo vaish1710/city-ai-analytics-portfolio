@@ -1,0 +1,23 @@
+System: extractive_baseline  (16 questions; small sample, treat as a smoke test)
+  answerable_questions            12
+  unanswerable_questions          4
+  retrieval_hit_rate              1.00
+  answer_accuracy                 0.67
+  false_refusal_rate              0.08
+  correct_refusal_rate            0.50
+  wrong_answers_to_unanswerable   2
+  citation_clean_rate             1.00
+
+Failures:
+  - How long is the Harbor Road elevation project and what does it cost?
+      -> The Harbor Road elevation project raises 1.4 miles of roadway so emergency vehicles can reach the regional hospital during floods. [S1]
+  - What share of the Harbor Road project is paid by the state grant?
+      -> County Board Meeting Minutes, September The Board voted 8-1 to accept a state grant of $13.2 million for the Harbor Road elevation project. [S1]
+  - Who qualifies for the utility bill credit and how large is it?
+      -> I couldn't find this in the provided documents.
+  - How many students does the school rezoning affect?
+      -> Notice of Proposed Elementary School Rezoning New Cedar Elementary will open in August 2028 with a capacity of 850 students. [S1]
+  - What is the speed limit on Harbor Road?
+      -> County Board Meeting Minutes, September The Board voted 8-1 to accept a state grant of $13.2 million for the Harbor Road elevation project. [S1]
+  - Does the county plan to build a new jail?
+      -> Example County Flood Resilience Plan (excerpt) About 9 percent of the county's land area lies in the special flood hazard area, which includes roughly 3,100 parcels. [S1]

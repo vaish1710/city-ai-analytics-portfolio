@@ -1,0 +1,5 @@
+{
+  "_note": "Replace the right-hand values with YOUR column names (placeholders, not the city's real field names). 'incident' is optional: an id shared by repeat reports of the same problem. 'keyword_rules' is optional: your CURRENT intake rules as [team, [keywords]] pairs, used as the baseline.",
+  "text": "DESCRIPTION", "label": "FINAL_DEPARTMENT", "created": "CREATED_AT", "lat": "LATITUDE", "lon": "LONGITUDE", "incident": "INCIDENT_ID",
+  "keyword_rules": [["Streets", ["pothole", "pavement"]], ["Waste", ["trash", "garbage"]]]
+}

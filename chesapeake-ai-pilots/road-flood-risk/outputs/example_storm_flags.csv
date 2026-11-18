@@ -1,0 +1,9 @@
+storm,segment,risk,incident,why
+56,47,0.527,1,"heavy forecast rain, low elevation, 12 past incidents here"
+56,41,0.256,1,"heavy forecast rain, low elevation, 10 past incidents here"
+56,35,0.247,0,"heavy forecast rain, 13 past incidents here"
+56,38,0.17,1,"heavy forecast rain, low elevation, 6 past incidents here"
+56,45,0.158,0,"heavy forecast rain, 7 past incidents here"
+56,31,0.148,0,"heavy forecast rain, low elevation, 4 past incidents here"
+56,25,0.144,0,"heavy forecast rain, low elevation, 3 past incidents here"
+56,9,0.143,0,"heavy forecast rain, low elevation, 7 past incidents here"

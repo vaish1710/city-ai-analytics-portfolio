@@ -1,0 +1,10 @@
+,value
+submissions,2000.0
+truly incomplete,1201.0
+ASSISTANT status: complete,0.1755
+  incomplete,0.1435
+  staff_review,0.681
+ASSISTANT said 'complete' but it was incomplete (share of incomplete),0.01498751040799334
+ASSISTANT 'missing' claims that were wrong (share of claims),0.0
+BASELINE (no uncertainty handling) 'missing' claims that were wrong,0.3683598293912369
+BASELINE said 'complete' but it was incomplete (share of incomplete),0.018318068276436304

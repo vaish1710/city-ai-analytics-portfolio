@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.joblib
+*.db
+outputs_real/
+.env
+.DS_Store

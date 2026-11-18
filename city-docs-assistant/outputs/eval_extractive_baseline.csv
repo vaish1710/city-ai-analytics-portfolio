@@ -1,0 +1,17 @@
+question,answerable,refused,flags,answer,retrieval_hit,correct
+What is the real estate tax rate in the adopted budget?,True,False,,The real estate tax rate stays at $0.95 per $100 of assessed value. [S1],True,True
+How much is the total adopted budget?,True,False,,Example County Fiscal Year 2027 Adopted Budget Summary The County Board adopted a total budget of $412 million for fiscal year 2027. [S1],True,True
+What percent of the county land area is in the special flood hazard area?,True,False,,"Example County Flood Resilience Plan (excerpt) About 9 percent of the county's land area lies in the special flood hazard area, which includes roughly 3,100 parcels. [S1]",True,True
+How long is the Harbor Road elevation project and what does it cost?,True,False,,The Harbor Road elevation project raises 1.4 miles of roadway so emergency vehicles can reach the regional hospital during floods. [S1],True,False
+What share of the Harbor Road project is paid by the state grant?,True,False,,"County Board Meeting Minutes, September The Board voted 8-1 to accept a state grant of $13.2 million for the Harbor Road elevation project. [S1]",True,False
+How much will water and sewer rates increase each year?,True,False,,Ordinance on Water and Sewer Rates (summary) Combined water and sewer rates increase by 4.5 percent each year from January 2027 through 2031. [S1],True,True
+Who qualifies for the utility bill credit and how large is it?,True,True,,I couldn't find this in the provided documents.,True,False
+How many students does the school rezoning affect?,True,False,,Notice of Proposed Elementary School Rezoning New Cedar Elementary will open in August 2028 with a capacity of 850 students. [S1],True,False
+When does New Cedar Elementary open?,True,False,,Notice of Proposed Elementary School Rezoning New Cedar Elementary will open in August 2028 with a capacity of 850 students. [S1],True,True
+How many portable classrooms does Maple Elementary use?,True,False,,"Maple Elementary is the most crowded, at 138 percent of capacity, and uses 22 portable classrooms. [S1]",True,True
+How did the Board vote on the state grant?,True,False,,"County Board Meeting Minutes, September The Board voted 8-1 to accept a state grant of $13.2 million for the Harbor Road elevation project. [S1]",True,True
+How long does the county manager have to publish the AI policy draft?,True,False,,The Board directed the county manager to publish a draft policy on the use of artificial intelligence within 90 days. [S1],True,True
+What is the county mayor's salary?,False,True,,I couldn't find this in the provided documents.,,
+How many library branches does the county operate?,False,True,,I couldn't find this in the provided documents.,,
+What is the speed limit on Harbor Road?,False,False,,"County Board Meeting Minutes, September The Board voted 8-1 to accept a state grant of $13.2 million for the Harbor Road elevation project. [S1]",,
+Does the county plan to build a new jail?,False,False,,"Example County Flood Resilience Plan (excerpt) About 9 percent of the county's land area lies in the special flood hazard area, which includes roughly 3,100 parcels. [S1]",,

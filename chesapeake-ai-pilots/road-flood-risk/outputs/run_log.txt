@@ -1,0 +1,28 @@
+Share of reported flood incidents caught when crews check the top 8 of 60 segments per storm
+(synthetic data, 10 simulated cities per row, last 30% of storms held out)
+
+                                                          recall_mean  ...  false_alerts
+history_storms system                                                  ...              
+80             ceiling (knows true risk; not achievable)        0.376  ...         7.208
+               model (logistic)                                 0.363  ...         7.254
+               hotspot history                                  0.357  ...         7.288
+               model (boosted trees)                            0.333  ...         7.346
+               lowest elevation                                 0.236  ...         7.504
+200            ceiling (knows true risk; not achievable)        0.339  ...         7.110
+               hotspot history                                  0.328  ...         7.140
+               model (logistic)                                 0.327  ...         7.143
+               model (boosted trees)                            0.300  ...         7.198
+               lowest elevation                                 0.204  ...         7.453
+
+[10 rows x 4 columns]
+
+Example, storm 56 (incident=1 means it was reported):
+ segment  risk  incident                                                        why
+      47  0.53         1 heavy forecast rain, low elevation, 12 past incidents here
+      41  0.26         1 heavy forecast rain, low elevation, 10 past incidents here
+      35  0.25         0                heavy forecast rain, 13 past incidents here
+      38  0.17         1  heavy forecast rain, low elevation, 6 past incidents here
+      45  0.16         0                 heavy forecast rain, 7 past incidents here
+      31  0.15         0  heavy forecast rain, low elevation, 4 past incidents here
+      25  0.14         0  heavy forecast rain, low elevation, 3 past incidents here
+       9  0.14         0  heavy forecast rain, low elevation, 7 past incidents here

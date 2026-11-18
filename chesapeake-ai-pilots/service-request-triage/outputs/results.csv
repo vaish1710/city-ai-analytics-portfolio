@@ -1,0 +1,14 @@
+,value
+tickets (train/val/test),2400/600/1000
+keyword rules: correct first assignment,0.738
+"model, route everything: correct first assignment",0.808
+confidence cutoff (chosen on validation),0.95
+  95% target reached on validation?,NO - used the strictest cutoff
+model auto-routes (share of tickets),0.416
+  accuracy on auto-routed,0.96875
+  sent to a person (share),0.5840000000000001
+  keyword-rule accuracy on those same auto-routed,0.9206730769230769
+vague tickets sent to a person (share),1.0
+clear tickets sent to a person (share),0.5346756152125279
+"duplicates, space+time+same team: precision / recall","0.39 / 0.80  (219 pairs flagged, 106 true)"
+"duplicates, ... plus text similarity>=0.15: precision / recall","0.49 / 0.24  (51 pairs flagged, 106 true)"
